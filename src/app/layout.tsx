@@ -1,39 +1,50 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Orbitron, Pacifico } from "next/font/google";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sans = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
+  weight: ["400", "500", "700", "800", "900"],
+});
+
+const script = Pacifico({
+  variable: "--font-script",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "LeonidaHQ — Your Guide to GTA 6's Leonida",
+    default: "LeonidaHQ — GTA 6 News. All Day. Every Day.",
     template: "%s — LeonidaHQ",
   },
   description:
-    "Interactive map, news, leaks, and lore for Grand Theft Auto VI. Filed by the Leonida State Bureau of Civilian Affairs.",
+    "The #1 source for GTA 6 news, leaks, and updates. Fast. Reliable. Connected to Vice City.",
   metadataBase: new URL("https://leonidahq.gg"),
+  icons: { icon: "/img/favicon-source.png" },
   openGraph: {
-    title: "LeonidaHQ — Your Guide to GTA 6's Leonida",
+    title: "LeonidaHQ — GTA 6 News. All Day. Every Day.",
     description:
-      "Interactive map, news, leaks, and lore for Grand Theft Auto VI.",
+      "The #1 source for GTA 6 news, leaks, and updates. Fast. Reliable. Connected to Vice City.",
     url: "https://leonidahq.gg",
     siteName: "LeonidaHQ",
     type: "website",
+    images: ["/img/banner-wide.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "LeonidaHQ",
-    description: "Your guide to GTA 6's Leonida.",
+    description: "GTA 6 News. All Day. Every Day.",
+    creator: "@LeonidaHQgg",
+    images: ["/img/banner-wide.png"],
   },
 };
 
@@ -45,9 +56,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`dark ${sans.variable} ${orbitron.variable} ${script.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col bg-background overflow-x-hidden">
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />

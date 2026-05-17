@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 
-export function EmailCapture() {
+type Props = {
+  variant?: "default" | "compact";
+};
+
+export function EmailCapture({ variant = "default" }: Props) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -25,24 +29,39 @@ export function EmailCapture() {
 
   if (status === "success") {
     return (
-      <div
-        id="notify"
-        className="bg-primary/10 border border-primary/30 rounded-lg p-4 max-w-md"
-      >
-        <p className="text-primary font-semibold">Logged.</p>
-        <p className="text-sm text-muted-foreground mt-1">
+      <div className="text-sm">
+        <p className="text-primary font-semibold">You're on the list.</p>
+        <p className="text-muted-foreground mt-1">
           The Bureau will notify you when the Leonida map activates on 2026-11-19.
         </p>
       </div>
     );
   }
 
+  if (variant === "compact") {
+    return (
+      <form onSubmit={handleSubmit} className="space-y-2">
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="your@email.com"
+          className="w-full bg-input border border-border rounded px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary transition"
+        />
+        <button
+          type="submit"
+          disabled={status === "loading"}
+          className="w-full inline-flex items-center justify-center gap-2 border border-secondary text-secondary uppercase tracking-widest text-xs font-bold px-4 py-2 rounded hover:bg-secondary hover:text-secondary-foreground transition disabled:opacity-50"
+        >
+          {status === "loading" ? "..." : "Subscribe Free →"}
+        </button>
+      </form>
+    );
+  }
+
   return (
-    <form
-      id="notify"
-      onSubmit={handleSubmit}
-      className="flex flex-col sm:flex-row gap-3 max-w-md"
-    >
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md">
       <input
         type="email"
         required

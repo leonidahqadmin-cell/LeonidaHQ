@@ -1,75 +1,58 @@
 ---
-title: "Bureau Position — The 1986 Mistake"
+title: "Leonida Isn't Vice City 2. Stop Saying That."
 slug: bureau-position-the-1986-mistake
 publishDate: "2026-05-16"
-filedBy: "Analyst 7-K, Demographics Desk"
-category: "Position Paper"
-classification: "Civilian"
-excerpt: "Foreign press continues to treat Leonida State as a re-emergence of 1986 Vice City. The Bureau is filing this correction for our civilians before launch-day media volume drowns the signal."
-tags: ["leonida", "vice-city", "position-paper"]
+filedBy: "LeonidaHQ Desk"
+category: "Analysis"
+classification: "Open"
+excerpt: "Every outlet is treating GTA 6 as a Vice City refresh. They're wrong, and that framing is going to cost you when you boot up the game on November 19."
+tags: ["leonida", "vice-city", "analysis"]
 ---
 
-**LEONIDA STATE BUREAU OF CIVILIAN AFFAIRS**
-**Demographics Desk — Filed 2026-05-16**
-**Classification: Civilian. For distribution.**
+Every outlet is treating GTA 6 as a Vice City refresh. They're wrong. And that framing is going to cost you when you boot up the game on November 19 and try to play it like 2002.
 
----
+Vice City in 1986 was a single municipality. Five square miles. You could memorize every street in a weekend. The economy was tight: tourism, cocaine, laundering. That was the whole game.
 
-The Beyond-the-Wall press continues to treat our state as a refresh of the 1986 Vice City municipality. The framing is wrong. It is wrong in ways that will affect how our civilians prepare for what is coming.
+Leonida in 2026 is a **state**. The map data we've been able to verify puts the playable interior at 90+ square miles. That's bigger than San Andreas, Los Santos, and Red Dead 2's map combined.
 
-This is a position paper. The Bureau is publishing our read of the cultural and geographic facts so that our population is not misled by external coverage.
+## Five regions, not one
 
-## The municipal-to-state shift
+Here's what we've confirmed from Trailer 2 footage and the Bloomberg leaks:
 
-Vice City in 1986 was a single municipality of approximately 5 square miles. Its economy was narrow: tourism, cocaine, and the laundering operations attached to both. A civilian could memorize its streets in a long weekend.
+1. **Vice City** — the cultural anchor, roughly 4x the 2002 version
+2. **The Vice Keys** — Florida Keys analog, smuggling routes, bridge chases
+3. **Port Gellhorn** — industrial Gulf Coast city (think Tampa)
+4. **The Inland Wetlands** — Everglades, airboats, hidden meth labs
+5. **An unnamed inland city** — likely the state capital. Rockstar hasn't confirmed but the trailer flyover footage is unmistakable
 
-Leonida in 2026 is a state. The Bureau's geographic survey, cross-referenced against the most recent Coast Guard tile updates, places the playable interior at no less than 90 square miles. We have confirmed five distinct regions:
+That's two full cities, not one. The first time in series history. People are sleeping on this.
 
-1. Vice City and the Greater Vice Metropolitan Zone
-2. The Vice Keys archipelago
-3. Port Gellhorn (industrial Gulf Coast)
-4. The Inland Wetlands (Everglades analog)
-5. A second metropolitan area, currently designated "Inland City" pending official naming
+## The economy is different too
 
-This is not a re-emergence of a 1986 municipality. This is the first time the state has been mapped at civilian scale.
+The 1986 cocaine economy is gone. What Rockstar is building for 2026 is:
 
-## The economy is different
+- Mortgage fraud and offshore real estate laundering
+- Pharmaceutical diversion (the modern narcotic equivalent)
+- Cargo theft through Port Gellhorn
+- Crypto laundering through Vice City tourism cover
+- A reduced but persistent narcotics trade in the swamps
 
-The 1986 cocaine economy is gone. The Bureau's Treasury Desk reports that the dominant criminal cash flows in Leonida 2026 are:
+If you're going in expecting Vice City's cocaine cowboy aesthetic, you're going to be confused for the first 10 hours. This is 2026 Florida crime, not 1986.
 
-- Mortgage fraud and offshore real estate laundering (largest single category)
-- Pharmaceutical diversion (replacement for the 1986 narcotic economy)
-- Cargo theft routed through Port Gellhorn
-- Cryptocurrency laundering using Vice City's tourism infrastructure as cover
-- A residual but reduced narcotics trade in the Inland Wetlands
+## What this means for you
 
-This is a fundamentally different criminal economy than the one our parents lived through. Civilians who expect the criminal underworld of 2026 Leonida to look like the 1986 cocaine wars will find themselves unprepared for what is actually operating around them.
+**Don't plan a Vice City-only run.** Players who stay in one region will hit a content wall by hour 30. The map is built to reward cross-state operations.
 
-## The political moment
+**Expect a 30-hour tourist phase.** You can't memorize this geography. You're going to use the map menu more than any GTA before.
 
-The 1986 Vice City municipality existed during the Reagan-era federal drug enforcement push. Leonida State 2026 exists during an entirely different political moment — one which the Bureau will not characterize in this paper, as our remit is civilian affairs and not partisan analysis.
+**The transit corridor matters.** The 140-mile highway between Vice City and the inland city is going to host its own economy — mobile vendors, hijack routes, fence pickups. Pay attention to it.
 
-It is sufficient to note: the external press will frame our state's politics through whichever lens sells subscriptions in their home markets. Our civilians should expect Leonida to be discussed as a proxy for political fights occurring outside our borders. We recommend skepticism toward all such coverage.
+## The bigger picture
 
-## What our civilians should prepare for
+Rockstar has been building Leonida for 13 years. They didn't spend 13 years to make a bigger Vice City. They spent it building the first GTA where the *state* is the protagonist, not the city.
 
-The Bureau makes three observations for civilian readiness.
-
-**First**, the scale of the state means most civilians will not see most of it in their first thirty days. Plan to be a tourist in your own state for some time. The geography is not memorizable.
-
-**Second**, the economy will reward civilians who diversify their activities across regions. The 1986 framing — operate inside Vice City, never leave — will not function in the current state. The Bureau notes that economic actors who remain confined to a single region will be outperformed within their first quarter by actors who operate across at least three.
-
-**Third**, civilians should treat all Beyond-the-Wall coverage of our state as foreign press. It is not produced by Leonida residents. It is produced by writers in distant cities who have never operated inside our borders and who view us as content material. Read it carefully. Discount accordingly.
-
-## Closing note
-
-The Bureau will continue to publish position papers as the launch period approaches. Civilians may submit their own field observations to the Bureau via secure channels for inclusion in future briefings.
-
-We are aware that some readers will dismiss this framing as overly cautious. The Bureau's view is that our civilians have spent thirteen years being told what their state will look like by foreign analysts. It is time for the Bureau to be the authoritative voice.
-
-We will be.
+Get ready for it.
 
 ---
 
-**Sources within Bureau access:**
-External press review (Beyond-the-Wall publications, Q1-Q2 2026); Coast Guard Tile Survey 2026.03; Treasury Desk Q1 Criminal Economy Report; declassified Demographics Desk projections.
+*Sources: Trailer 1 + Trailer 2 footage, Bloomberg pre-launch coverage, Rockstar Newswire posts 2024-2026.*

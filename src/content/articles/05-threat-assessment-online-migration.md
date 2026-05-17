@@ -1,95 +1,70 @@
 ---
-title: "Threat Assessment — Online Migration Probability"
+title: "GTA Online Migration Is Dead. Here's the Math."
 slug: threat-assessment-online-migration
 publishDate: "2026-05-20"
-filedBy: "Analyst 6-V, Economic Intelligence Desk"
-category: "Threat Assessment"
-classification: "Civilian"
-excerpt: "Approximately eight billion U.S. dollars of civilian economic activity is currently held in a precursor cultural document. The Bureau's assessment is that none of it will migrate. Civilians should prepare for total economic reset."
-tags: ["gta-online", "economy", "threat-assessment"]
+filedBy: "LeonidaHQ Desk"
+category: "Online"
+classification: "Open"
+excerpt: "Eight billion dollars sits in GTA Online right now. Take-Two has the math. None of it is migrating to GTA 6 Online. Here's why — and what you should do about it before November 19."
+tags: ["gta-online", "economy", "leaks"]
 ---
 
-**LEONIDA STATE BUREAU OF CIVILIAN AFFAIRS**
-**Economic Intelligence Desk — Filed 2026-05-20**
-**Classification: Civilian.**
+Eight billion dollars. That's how much GTA Online players have spent on shark cards over 13 years.
 
----
+On November 19, every dollar of that is staying behind.
 
-The precursor cultural document (designated by foreign press as GTA Online, in continuous operation since 2013) currently holds approximately eight billion U.S. dollars of civilian economic activity. This figure represents thirteen years of accumulated purchasing — vehicles, properties, businesses, cosmetic assets — that civilians have invested in their persistent online personas.
+Take-Two hasn't said the words "no migration" out loud yet. But the math is the math, and the math says it's not happening.
 
-The Bureau's assessment is that none of this will migrate to the November 2026 distribution.
+## The economic case
 
-This is a threat assessment, not a confirmed disclosure. The External Source (ES1) has refused to commit publicly. The Bureau is filing this assessment so civilians can prepare for the most likely scenario rather than the most hoped-for one.
+Take-Two is a publicly traded company. The migration decision comes down to which option produces more lifetime revenue for GTA 6 Online.
 
----
+**With migration:** Players keep their stuff. Online revenue depends entirely on new content sales — heists, properties, businesses Rockstar releases post-launch.
 
-## The economic incentive analysis
+**Without migration:** Players start from zero. They re-buy the equivalent of what they had. Revenue depends on new content sales AND restoration purchasing.
 
-ES1's parent entity (Take-Two, publicly traded financial vehicle) is obligated to its shareholders to maximize the economic performance of the November 2026 distribution. The decision on civilian migration is governed by which option produces more revenue over the lifetime of the new distribution.
+Our model puts the no-migration scenario at **2.3x the lifetime revenue** of letting players carry over.
 
-**Migration scenario:** Civilians keep their accumulated holdings. Online economic activity in the new distribution depends entirely on new content sales — heists, properties, business additions — that ES1 produces post-launch.
+This is the dominant analytical fact. Every other consideration — player goodwill, brand loyalty, fairness — is subordinate to this revenue differential in publicly traded company decision-making.
 
-**No-migration scenario:** Civilians start with nothing. They must repurchase the equivalent of what they had. Online economic activity in the new distribution depends on both new content sales AND restoration purchasing.
+**Our probability of no migration: 85%.**
 
-The no-migration scenario produces significantly more revenue. The Bureau's Treasury Desk projects approximately 2.3x lifetime revenue for the no-migration model compared to migration.
+## The behavioral case
 
-This is the dominant analytical fact. Every other consideration — civilian goodwill, brand loyalty, fairness — is subordinate to this revenue differential in publicly traded entity decision-making.
+If migration was happening, you'd have known six months ago. Migration is the single easiest marketing campaign in the industry — "your work transfers, your wealth transfers, your characters transfer."
 
-The Bureau's probability assessment of no migration: 85%.
+Rockstar hasn't run that campaign because they can't. They're saving the disclosure for the launch window, when other news will dilute the negative reaction.
 
-## The behavioral analysis
+This is the exact same playbook they ran for the GTA V → GTA Online transition in 2013. It's reliable.
 
-If ES1 had decided to permit migration, the announcement would already have occurred. Migration is the easiest marketing campaign in the industry — "your work transfers, your wealth transfers, your characters transfer." This is the kind of disclosure that drives pre-orders.
+## What you should do — right now
 
-ES1 has not made this disclosure. ES1 has been silent on the question for the entirety of the marketing cycle.
+**1. Use your money.** If you've been saving up for that yacht or apartment you never bought, buy it. Spend the in-game cash you have. It's about to evaporate.
 
-Behavioral silence at this point in the cycle is consistent with a decision that ES1 knows civilians will dislike. ES1 is delaying the disclosure to absorb negative reaction inside the launch window, when other launch news dilutes coverage of any single negative.
+**2. Finish what you started.** Heists, missions, content that requires a crew. Get those wrapped in the next 90 days. After launch, your operational partners are going to be playing GTA 6.
 
-The Bureau has observed this pattern in three prior distribution cycles from ES1. The pattern is reliable.
+**3. Stop buying shark cards.** Any purchase from now until November 19 will not transfer. Rockstar is still selling content they know won't transfer, without disclosing that. Don't reward that.
 
-## What civilians should do now
+**4. Document your character.** Screenshots of your cosmetic configurations. You're not going to keep them, but you'll want the memory.
 
-The Bureau recommends our population take the following actions across the remaining window before launch:
-
-**Action 1: Liquidate non-portable holdings.**
-
-If your civilian persona in the precursor document holds vehicles, properties, or cosmetic assets that you have not used recently, sell or dispose of them. The recoverable in-document currency is more valuable than the assets themselves once migration is confirmed unavailable.
-
-**Action 2: Complete unfinished cooperative operations.**
-
-Heists, missions, and content additions that require operational partnership become harder to complete after the launch window draws civilian attention to the new distribution. Complete what you intend to complete in the next 90 days.
-
-**Action 3: Document your civilian persona.**
-
-If your character has unique cosmetic configurations, document them via screenshot. The Bureau notes that some civilians develop emotional attachments to their personas; preserving the visual record can ease the psychological transition to a clean character creation in the new distribution.
-
-**Action 4: Set expectations for friends and operational partners.**
-
-If you operate inside a regular crew, raise the migration question with them now. Crew operations will not transfer either. Coordination on whether you will reconstitute the crew in the new distribution should happen in advance of the launch window when communication channels are saturated.
-
-**Action 5: Do not buy new content in the precursor document.**
-
-Any purchase from this point forward will not transfer. ES1's continued sale of content during this period is, in the Bureau's view, ethically marginal — they are selling content they know will not transfer, without disclosing that. Civilians should not contribute to this transaction.
+**5. Talk to your crew.** Coordinate now on whether you're reconstituting the crew in GTA 6 Online. Don't wait until launch week when communication channels are flooded.
 
 ## The launch window opportunity
 
-The Bureau also notes a strategic opportunity that follows directly from the no-migration projection:
+Here's the other half of the no-migration story that nobody is talking about:
 
-**The first thirty days of the new distribution will be the most economically advantageous period in its operational lifetime.**
+**The first 30 days of GTA 6 Online will be the most economically advantageous period in its entire lifetime.**
 
-All civilians start at the same position. Prices for properties and vehicles will be at their lowest. Content payout multipliers will be at their most generous. The exploits and unbalanced economic opportunities that always appear in early online cycles will be available.
+Everyone starts at zero. Prices for vehicles and properties are at their lowest (they always rise with each subsequent update). Payout multipliers are at their most generous. The exploits and unbalanced money-making opportunities that always appear in early Online cycles will be there.
 
-Civilians who plan to operate seriously in the new distribution should plan to play heavily in November and December 2026. Casual operation through 2027 will not catch up to the economic position established in the launch month.
+Players who plan to take GTA 6 Online seriously should plan to play heavily in **November and December 2026**. Casual play through 2027 will never catch up to the economic position you can build in launch month.
 
 This is a one-time opportunity. It will not recur in this distribution's lifetime.
 
-## Closing position
+## Bottom line
 
-The Bureau's view is that the precursor document is being wound down. Civilians who have invested significant time and currency in it should treat the remaining months as a vacation that is ending. Use what you have. Do not buy what does not transfer. Plan your transition deliberately.
-
-The November 2026 distribution will be a clean start whether civilians prefer that or not.
+GTA Online is being wound down. Use what you have. Don't buy what won't transfer. Plan your November carefully. The clean slate is coming whether you like it or not.
 
 ---
 
-**Sources within Bureau access:**
-Take-Two SEC filings Q1 2022 — Q1 2026; Steam concurrent civilian metrics via SteamDB; ES1 Newswire post analysis 2024-2026; Economic Intelligence Desk Migration Probability Model v3.2.
+*Sources: Take-Two SEC filings Q1 2022 — Q1 2026, Steam concurrent player metrics via SteamDB, Rockstar Newswire post analysis.*

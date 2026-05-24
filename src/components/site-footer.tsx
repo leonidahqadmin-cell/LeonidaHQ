@@ -1,4 +1,4 @@
-import Link from "next/link";
+mport Link from "next/link";
 
 export function SiteFooter() {
   return (
@@ -32,7 +32,7 @@ export function SiteFooter() {
               </Link>
             </div>
             <p className="text-muted-foreground normal-case tracking-normal text-xs">
-              hello@leonidahq.gg · Fredericksburg, VA
+              hello@leonidahq.gg
             </p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -15,6 +16,11 @@ const NAV_ITEMS = [
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -33,8 +39,8 @@ export function MobileMenu() {
         <Menu size={28} />
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-[100] flex flex-col bg-background/95 backdrop-blur-md">
+      {mounted && open && createPortal(
+        <div className="fixed inset-0 z-[100] flex flex-col bg-[#08060f]">
           <div className="flex h-20 items-center justify-between border-b border-white/10 px-6">
             <Link
               href="/"
@@ -82,7 +88,8 @@ export function MobileMenu() {
               @viraltbf
             </Link>
           </nav>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );

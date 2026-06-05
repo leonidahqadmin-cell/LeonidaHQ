@@ -349,7 +349,7 @@ export function MapView() {
         </div>
 
         {selectedPOI && (
-        <div className="absolute bottom-4 left-4 right-4 z-30 max-h-[58vh] overflow-y-auto rounded-lg border border-white/10 bg-black/82 p-4 shadow-2xl backdrop-blur lg:left-auto lg:w-[390px]">
+        <div className="fixed inset-x-0 bottom-0 z-50 max-h-[72vh] overflow-y-auto rounded-t-2xl border-t border-white/15 bg-[#0a0712] p-4 pb-6 shadow-2xl backdrop-blur lg:absolute lg:inset-x-auto lg:bottom-4 lg:right-4 lg:w-[390px] lg:rounded-lg lg:border lg:pb-4">
           <button
             onClick={() => setSelectedPOI(null)}
             className="absolute right-3 top-3 z-10 grid h-8 w-8 place-items-center rounded-full border border-white/20 bg-black/70 text-white/80 transition hover:text-white"

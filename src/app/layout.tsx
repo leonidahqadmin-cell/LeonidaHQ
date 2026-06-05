@@ -48,6 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LeonidaHQ - GTA 6 News. Leonida Map. No-Fluff Intel.",
     description: "Track trailer clues, map evidence, character theories, and Rockstar moves from @viraltbf.",
+    site: "@viraltbf",
     creator: "@viraltbf",
     images: ["/img/leonidahq-social-card.jpg"],
   },

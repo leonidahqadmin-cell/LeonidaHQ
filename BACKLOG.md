@@ -12,7 +12,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 ## 🚀 SHIP / DEPLOY (gets the real site live)
 - ✅ Deploy the Next.js site to Vercel
 - ✅ **Point leonidahq.gg DNS → Vercel** — LIVE (apex A → 76.76.21.21, www → cname.vercel-dns.com via Namecheap; serving Next.js, confirmed 2026-06-05)
-- 🔜 **Verify leonidahq.gg in Resend** (publish SPF/DKIM) so signup emails actually send
+- ✅ **Resend live** — domain verified, RESEND_API_KEY in Vercel Production; live POST to /api/subscribe returned `sent:true` (verified 2026-06-05)
 - 🔜 Decide Ghost's fate: migrate its 40 articles + countdown (still at leonidahq.ghost.io), or leave them
 
 ## 📱 MOBILE / UX
@@ -53,8 +53,9 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 
 ## 🧹 INFRA / PERF / HYGIENE
 - ✅ Build clean (33 routes); committed + pushed; merge-typo caught & fixed
-- 🔜 Remove dead deps (three / @react-three / maplibre / react-map-gl) + orphaned 3D components
+- ✅ Removed dead deps (three / @react-three / maplibre / react-map-gl, 7 total) + orphaned 3D components — 1,365 lockfile lines gone (d19cf8b)
 - 🔜 Replace boilerplate README with a real runbook (dev :3001, env vars, deploy/DNS/Resend steps)
+  - Env vars (Vercel Production): `RESEND_API_KEY` (required, signup emails) · `SUBSCRIBE_NOTIFY_TO` (optional, emails you per new signup — set to davisn2015@gmail.com) · `SUBSCRIBE_NOTIFY_TO` changes need a redeploy to take effect
 - 💡 Security headers in next.config; Core Web Vitals pass
 
 ## ⚠️ ROOT CAUSES / RISKS

@@ -32,7 +32,7 @@ export default function AboutPage() {
               <li>Daily news drops on every confirmed GTA 6 disclosure</li>
               <li>Verified leak triage — we read the silence, not just the marketing</li>
               <li>Character and lore deep dives for Lucia, Jason, and the Leonida cast</li>
-              <li>The interactive Leonida map (activates on launch day, 2026-11-19)</li>
+              <li>The interactive Leonida map — live preview with 25+ locations, updated with every new signal</li>
               <li>Honest economic analysis of GTA Online's wind-down</li>
             </ul>
           </div>
@@ -55,9 +55,20 @@ export default function AboutPage() {
               Who runs this
             </h2>
             <p>
-              Built by a fan, in Fredericksburg, VA. Independent. Unaffiliated.
-              Not Rockstar. Not Take-Two. Just someone obsessed with what's coming
-              on November 19, 2026 — and building the site we wished existed.
+              LeonidaHQ tracks GTA 6 news, Leonida map evidence, trailer clues, character theories, and Rockstar moves.
+              <br /><br />
+              <strong>Filed by LeonidaHQ / @viraltbf</strong>. Independent. Not affiliated with Rockstar Games or Take-Two Interactive.
+              <br /><br />
+              We treat every pin and claim like evidence on a board: confidence level + source attached. No hype without labels.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-heading text-2xl font-black uppercase tracking-tight text-secondary mb-3">
+              How evidence gets here
+            </h2>
+            <p className="text-base">
+              Tips and leaks sent to @viraltbf or hello@leonidahq.gg are triaged the same way: cross-checked against trailers, Rockstar posts, and prior patterns. We publish only with a confidence tag (Confirmed / Trailer Evidence / Strong Theory / Weak Theory). Corrections always welcome and credited on X.
             </p>
           </div>
 
@@ -77,11 +88,11 @@ export default function AboutPage() {
             <p className="mt-1">
               Social:{" "}
               <Link
-                href="https://x.com/LeonidaHQgg"
+                href="https://x.com/viraltbf"
                 target="_blank"
                 className="text-secondary hover:underline"
               >
-                @LeonidaHQgg
+                @viraltbf
               </Link>
             </p>
           </div>

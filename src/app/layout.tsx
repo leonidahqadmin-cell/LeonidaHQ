@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Orbitron, Pacifico } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
@@ -23,28 +25,31 @@ const script = Pacifico({
 
 export const metadata: Metadata = {
   title: {
-    default: "LeonidaHQ — GTA 6 News. All Day. Every Day.",
-    template: "%s — LeonidaHQ",
+    default: "LeonidaHQ - GTA 6 News, Map Intel & Trailer Clues",
+    template: "%s - LeonidaHQ",
   },
   description:
-    "The #1 source for GTA 6 news, leaks, and updates. Fast. Reliable. Connected to Vice City.",
+    "Track GTA 6 Leonida map evidence, trailer clues, character theories, and Rockstar news from @viraltbf. Fan intelligence hub.",
   metadataBase: new URL("https://leonidahq.gg"),
   icons: { icon: "/img/favicon-source.png" },
+  alternates: {
+    types: { "application/rss+xml": "https://leonidahq.gg/rss.xml" },
+  },
   openGraph: {
-    title: "LeonidaHQ — GTA 6 News. All Day. Every Day.",
+    title: "LeonidaHQ - GTA 6 News, Map Intel, and Trailer Clues",
     description:
-      "The #1 source for GTA 6 news, leaks, and updates. Fast. Reliable. Connected to Vice City.",
+      "Track GTA 6 Leonida map evidence, trailer clues, character theories, and Rockstar news from @viraltbf. Fan intelligence hub.",
     url: "https://leonidahq.gg",
     siteName: "LeonidaHQ",
     type: "website",
-    images: ["/img/banner-wide.png"],
+    images: ["/img/leonidahq-social-card.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LeonidaHQ",
-    description: "GTA 6 News. All Day. Every Day.",
-    creator: "@LeonidaHQgg",
-    images: ["/img/banner-wide.png"],
+    title: "LeonidaHQ - GTA 6 News. Leonida Map. No-Fluff Intel.",
+    description: "Track trailer clues, map evidence, character theories, and Rockstar moves from @viraltbf.",
+    creator: "@viraltbf",
+    images: ["/img/leonidahq-social-card.jpg"],
   },
 };
 
@@ -62,7 +67,10 @@ export default function RootLayout({
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
 }
+

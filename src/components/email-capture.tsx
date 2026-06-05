@@ -32,7 +32,7 @@ export function EmailCapture({ variant = "default" }: Props) {
       <div className="text-sm">
         <p className="text-primary font-semibold">You're on the list.</p>
         <p className="text-muted-foreground mt-1">
-          The Bureau will notify you when the Leonida map activates on 2026-11-19.
+          Get the Leonida Map Intel Brief + instant alerts the second the first summer marketing assets drop.
         </p>
       </div>
     );

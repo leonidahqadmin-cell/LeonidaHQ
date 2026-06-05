@@ -17,6 +17,13 @@ export type Article = {
   html: string;
 };
 
+function isFutureDate(date: string) {
+  const publishDate = new Date(`${date}T00:00:00`);
+  const today = new Date();
+  today.setHours(23, 59, 59, 999);
+  return publishDate.getTime() > today.getTime();
+}
+
 function readAllFiles(): Article[] {
   if (!fs.existsSync(ARTICLES_DIR)) return [];
   const files = fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith(".md"));
@@ -48,6 +55,7 @@ function readAllFiles(): Article[] {
         html: marked.parse(content, { async: false }) as string,
       };
     })
+    .filter((article) => !isFutureDate(article.publishDate))
     .sort((a, b) => (a.publishDate < b.publishDate ? 1 : -1));
 }
 

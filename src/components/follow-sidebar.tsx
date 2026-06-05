@@ -10,15 +10,15 @@ export function FollowSidebar() {
           <span>𝕏</span> Follow on X
         </p>
         <p className="text-sm text-muted-foreground mb-4">
-          Live leaks, hot takes, and instant updates.
+          Real-time intel, predictions, and the daily pulse — straight from @viraltbf. Get the map clues before they go quiet.
         </p>
         <Link
-          href="https://x.com/LeonidaHQgg"
+          href="https://x.com/viraltbf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-primary text-primary uppercase tracking-widest text-xs font-bold px-4 py-2 rounded hover:bg-primary hover:text-primary-foreground transition"
         >
-          @LeonidaHQgg →
+          @viraltbf →
         </Link>
       </div>
 
@@ -31,7 +31,7 @@ export function FollowSidebar() {
           <span>✉</span> Join the List
         </p>
         <p className="text-sm text-muted-foreground mb-4">
-          Weekly Vice City intel drops. No spam. Ever.
+          Map updates, exclusive predictions, and real-time alerts. No spam.
         </p>
         <EmailCapture variant="compact" />
       </div>

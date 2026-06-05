@@ -1,28 +1,35 @@
 "use client";
 
 const HEADLINES = [
-  "And IGN's Warning Has Everyone Talking",
-  "Sony Is Literally Telling PS4 Players to Upgrade for GTA 6 — And It's Working",
-  "Scottish MPs Call Out Rockstar Over Edinburgh References",
-  "Best Buy Just Leaked The GTA 6 Pre-Order Date",
-  "Take-Two Earnings Hint at $90 Launch Price",
+  { label: "Official", text: "Take-Two says marketing starts this summer", href: "/articles?category=news" },
+  { label: "Watch", text: "Rockstar opened a GTA 6 Discord channel", href: "/articles?category=news" },
+  { label: "Evidence", text: "Second-city map clues are tracked on the evidence board", href: "/articles?category=evidence" },
+  { label: "Theory", text: "Trailer 3 timing remains a signal watch, not a confirmed date", href: "/articles?category=theory" },
+  { label: "Map", text: "Leonida pins now show trailer, strong, or weak confidence", href: "/map" },
 ];
 
 export function TopTicker() {
-  // Duplicate the headlines for seamless loop
   const items = [...HEADLINES, ...HEADLINES];
+
   return (
-    <div className="relative bg-background border-b border-border h-9 overflow-hidden flex items-center text-xs font-medium">
-      <span className="absolute left-0 top-0 bottom-0 z-10 px-3 flex items-center bg-primary text-primary-foreground uppercase tracking-widest font-bold">
-        Live
+    <div className="relative hidden h-9 items-center overflow-hidden border-b border-border bg-background text-xs font-medium md:flex">
+      <span className="absolute bottom-0 left-0 top-0 z-10 flex items-center bg-primary px-3 font-bold uppercase tracking-widest text-primary-foreground">
+        Live Intel
       </span>
-      <div className="ml-20 overflow-hidden whitespace-nowrap relative w-full">
+      <div className="relative ml-24 w-full overflow-hidden whitespace-nowrap">
         <div className="inline-flex animate-marquee gap-10 pl-4">
-          {items.map((h, i) => (
-            <span key={i} className="text-muted-foreground">
-              <span className="text-secondary mr-2">◆</span>
-              {h}
-            </span>
+          {items.map((headline, index) => (
+            <a
+              key={`${headline.label}-${index}`}
+              href={headline.href}
+              className="inline-flex items-center gap-2 text-muted-foreground transition hover:text-secondary"
+              title="Open related LeonidaHQ report"
+            >
+              <span className="rounded border border-secondary/40 px-1.5 py-0.5 font-heading text-[9px] uppercase tracking-widest text-secondary">
+                {headline.label}
+              </span>
+              <span>{headline.text}</span>
+            </a>
           ))}
         </div>
       </div>
@@ -32,7 +39,10 @@ export function TopTicker() {
           100% { transform: translateX(-50%); }
         }
         .animate-marquee {
-          animation: marquee 60s linear infinite;
+          animation: marquee 70s linear infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animate-marquee { animation: none; }
         }
       `}</style>
     </div>

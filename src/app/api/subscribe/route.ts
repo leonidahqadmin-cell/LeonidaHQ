@@ -44,7 +44,11 @@ function welcomeHtml() {
               <tr>
                 <td style="padding:24px 32px;border-top:1px solid rgba(255,255,255,0.06);color:#7d7d8a;font-size:12px;text-align:center;">
                   <p style="margin:0 0 4px;">LeonidaHQ · GTA 6 News · All Day · Every Day</p>
-                  <p style="margin:0;">Follow on X: <a href="https://x.com/LeonidaHQgg" style="color:#00E5CC;text-decoration:none;">@LeonidaHQgg</a></p>
+                  <p style="margin:0 0 12px;">Follow on X: <a href="https://x.com/viraltbf" style="color:#00E5CC;text-decoration:none;">@viraltbf</a></p>
+                  <p style="margin:0 0 4px;color:#5d5d6a;">LeonidaHQ · hello@leonidahq.gg</p>
+                  <p style="margin:0;color:#5d5d6a;">
+                    Don't want these? <a href="https://leonidahq.gg/unsubscribe" style="color:#7d7d8a;">Unsubscribe</a>
+                  </p>
                 </td>
               </tr>
             </table>

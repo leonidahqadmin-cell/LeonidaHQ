@@ -314,7 +314,7 @@ export function MapView() {
             <button
               key={poi.id}
               onClick={() => setSelectedPOI(poi)}
-              className="absolute z-10 -translate-x-1/2 -translate-y-1/2 transition hover:z-20 hover:scale-110"
+              className="absolute z-10 grid min-h-[44px] min-w-[44px] -translate-x-1/2 -translate-y-1/2 place-items-center transition hover:z-20 hover:scale-110"
               style={position}
               aria-label={poi.name}
             >

@@ -27,7 +27,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Homepage hero → clean Vice City skyline (was fake-browser mockup slop)
 - ✅ Article covers → clean skyline (was the "LEONIDAHQ" watermark ghosting titles)
 - ✅ viewport meta + themeColor
-- 🔜 Remaining article covers with busy poster text ("SUMMER 2026", pre-order) → cleaner images
+- ✅ Removed the fake "SUMMER 2026 / pre-order" poster slop — it was `inland-city-dusk.jpg` (MISNAMED; `summer-marketing-hype.jpg` is actually a CLEAN dusk skyline). Killed every ref: leaks + surveillance covers, a map POI evidence image, the "hidden" POI fallback, homepage Neon Collectible hotspot. Diversified Predictions covers. Verified 390px (795cabd)
+  - ⚠️ LESSON: image filenames here LIE — never swap covers by filename, always READ the image first (one Read per file; batch Reads can mis-order)
 - 🔜 Unify ad-hoc buttons onto `.btn-*` (about, not-found, map, follow-sidebar, email-capture)
 - ✅ Low-contrast text → white/65 (WCAG AA) — bumped 14 faint labels/meta across map-view, article header, homepage stats; verified 390px (9ff7377)
 - 🔜 Orbitron: apply to headings OR drop the unused font import

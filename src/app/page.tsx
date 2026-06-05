@@ -54,12 +54,12 @@ function Hero() {
     <section className="relative w-full overflow-hidden border-b border-border">
       <div className="relative min-h-[520px] w-full overflow-hidden sm:min-h-[560px] lg:min-h-[620px]">
         <Image
-          src="/img/3d-interactive-hero.jpg"
+          src="/img/vice-city-neon-hero.jpg"
           alt="LeonidaHQ GTA 6 Leonida map and intel hub. Neon Vice City skyline."
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_18%]"
+          className="object-cover object-[center_32%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-background" />
         <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,229,204,0.035)_50%)] bg-[length:100%_4px]" />

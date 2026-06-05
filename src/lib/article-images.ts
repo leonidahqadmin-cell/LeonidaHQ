@@ -7,9 +7,9 @@ const SLUG_IMAGES: Record<string, string> = {
   "real-leonida-locations": "/img/leonida-map-preview.jpg",
   "billion-dollar-map": "/img/map-illustration.jpg",
   "launch-day-economy": "/img/social-card-premium.jpg",
-  "state-of-play-reality-check": "/img/hero-neon-banner.jpg",
+  "state-of-play-reality-check": "/img/vice-city-neon-hero.jpg",
   "summer-asset-drop": "/img/summer-marketing-hype.jpg",
-  "trailer-3-scorecard": "/img/hero-neon-banner.jpg",
+  "trailer-3-scorecard": "/img/vice-city-neon-hero.jpg",
   "trailer-3-predictions": "/img/summer-marketing-hype.jpg",
   "20-days-to-marketing": "/img/summer-marketing-hype.jpg",
   "discord-gta6-channel-signals": "/img/social-card-premium.jpg",
@@ -21,7 +21,7 @@ const SLUG_IMAGES: Record<string, string> = {
 };
 
 const CATEGORY_IMAGES: Record<string, string> = {
-  news: "/img/hero-neon-banner.jpg",
+  news: "/img/vice-city-neon-hero.jpg",
   leaks: "/img/inland-city-dusk.jpg",
   analysis: "/img/map-illustration.jpg",
   predictions: "/img/summer-marketing-hype.jpg",

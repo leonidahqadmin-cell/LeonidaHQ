@@ -29,7 +29,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ viewport meta + themeColor
 - 🔜 Remaining article covers with busy poster text ("SUMMER 2026", pre-order) → cleaner images
 - 🔜 Unify ad-hoc buttons onto `.btn-*` (about, not-found, map, follow-sidebar, email-capture)
-- 🔜 Low-contrast text (white/38–45) → ≥ white/60 (WCAG AA)
+- ✅ Low-contrast text → white/65 (WCAG AA) — bumped 14 faint labels/meta across map-view, article header, homepage stats; verified 390px (9ff7377)
 - 🔜 Orbitron: apply to headings OR drop the unused font import
 - 💡 Prune dead/no-op CSS (glow/cyber/holo classes); proper favicon (currently a 700KB PNG)
 

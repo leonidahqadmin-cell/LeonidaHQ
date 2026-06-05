@@ -68,7 +68,7 @@ export const LEONIDA_POIS: POI[] = [
     evidenceType: "Systems theory",
     relatedArticle: "trailer-3-scorecard",
     lastUpdated: "2026-06-03",
-    evidenceImage: "/img/inland-city-dusk.jpg",
+    evidenceImage: "/img/summer-marketing-hype.jpg",
   },
   {
     id: "poi-4",

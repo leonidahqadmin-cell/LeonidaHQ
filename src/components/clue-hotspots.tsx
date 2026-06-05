@@ -10,7 +10,7 @@ export function ClueHotspots() {
 
   const items = [
     { title: "Trailer 2 Pier Drop", meta: "Trailer evidence / coastal", img: "/img/futuristic-map-mockup.jpg" },
-    { title: "Neon Collectible", meta: "Strong theory / night", img: "/img/inland-city-dusk.jpg" },
+    { title: "Neon Collectible", meta: "Strong theory / night", img: "/img/summer-marketing-hype.jpg" },
     { title: "Port Heist Setup", meta: "Trailer Evidence", img: "/img/3d-map-section-mockup.jpg" },
     { title: "Evidence Journey", meta: "Pin trail / map notes", img: "/img/evidence-journey-map.jpg" },
   ];

@@ -91,7 +91,7 @@ function pinPosition(poi: POI) {
 }
 
 export function MapView() {
-  const [selectedPOI, setSelectedPOI] = useState<POI>(LEONIDA_POIS[0]);
+  const [selectedPOI, setSelectedPOI] = useState<POI | null>(null);
   const [activeCategories, setActiveCategories] = useState<Set<string>>(
     new Set(Object.keys(CATEGORY_META))
   );
@@ -167,7 +167,7 @@ export function MapView() {
   }
 
   return (
-    <div className="grid h-full min-h-[520px] bg-[#070707] lg:min-h-[760px] lg:grid-cols-[360px_minmax(0,1fr)]">
+    <div className="grid min-h-[520px] bg-[#070707] lg:h-full lg:min-h-[760px] lg:grid-cols-[360px_minmax(0,1fr)]">
       <aside className="order-2 border-t border-white/10 bg-[#0d0b0a] p-4 lg:order-1 lg:border-r lg:border-t-0">
         <div className="flex items-center justify-between">
           <div>
@@ -239,7 +239,7 @@ export function MapView() {
         <FilterSection title="Map Tools">
           <ToolButton active={showRoutes} onClick={() => setShowRoutes((v) => !v)} icon={Route} label="Routes" />
           <ToolButton active={showHeat} onClick={() => setShowHeat((v) => !v)} icon={Layers} label="Heatmap" />
-          <ToolButton active={false} onClick={() => setSelectedPOI(LEONIDA_POIS[0])} icon={Settings} label="Reset View" />
+          <ToolButton active={false} onClick={() => setSelectedPOI(null)} icon={Settings} label="Reset View" />
           <ToolButton active={false} onClick={() => window.open("https://x.com/viraltbf", "_blank")} icon={Share2} label="Send Tip" />
         </FilterSection>
 
@@ -249,7 +249,7 @@ export function MapView() {
               key={poi.id}
               onClick={() => setSelectedPOI(poi)}
               className={`w-full rounded-lg border p-3 text-left transition ${
-                selectedPOI.id === poi.id
+                selectedPOI?.id === poi.id
                   ? "border-primary bg-primary/12"
                   : "border-white/10 bg-black/30 hover:border-secondary/60"
               }`}
@@ -318,7 +318,7 @@ export function MapView() {
               style={position}
               aria-label={poi.name}
             >
-              <MarkerIcon poi={poi} active={selectedPOI.id === poi.id} />
+              <MarkerIcon poi={poi} active={selectedPOI?.id === poi.id} />
             </button>
           );
         })}
@@ -348,11 +348,12 @@ export function MapView() {
           X: {coords.x}, Y: {coords.y}
         </div>
 
+        {selectedPOI && (
         <div className="absolute bottom-4 left-4 right-4 z-30 max-h-[58vh] overflow-y-auto rounded-lg border border-white/10 bg-black/82 p-4 shadow-2xl backdrop-blur lg:left-auto lg:w-[390px]">
           <button
-            onClick={() => setSelectedPOI(LEONIDA_POIS[0])}
-            className="absolute right-3 top-3 text-white/45 hover:text-white"
-            aria-label="Reset selected pin"
+            onClick={() => setSelectedPOI(null)}
+            className="absolute right-3 top-3 z-10 grid h-8 w-8 place-items-center rounded-full border border-white/20 bg-black/70 text-white/80 transition hover:text-white"
+            aria-label="Close pin details"
           >
             <X className="h-4 w-4" />
           </button>
@@ -404,6 +405,7 @@ export function MapView() {
             </a>
           </div>
         </div>
+        )}
       </section>
     </div>
   );

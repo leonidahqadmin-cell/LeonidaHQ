@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function MapPage() {
   return (
-    <div className="flex h-[calc(100vh-5rem)] min-h-[560px] w-full flex-col md:h-[calc(100vh-5rem-2.25rem)] md:min-h-[640px]">
+    <div className="flex min-h-[calc(100vh-5rem)] w-full flex-col md:h-[calc(100vh-5rem-2.25rem)] md:min-h-[640px]">
       <div className="border-b border-border bg-card/55 px-4 py-3 md:px-6">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>

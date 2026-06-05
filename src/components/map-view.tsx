@@ -174,14 +174,14 @@ export function MapView() {
             <p className="eyebrow">Interactive map</p>
             <h2 className="mt-1 text-2xl font-black tracking-tight">Leonida</h2>
           </div>
-          <div className="rounded-lg border border-white/10 bg-white/[0.03] px-2 py-1 text-[10px] font-black uppercase tracking-widest text-white/50">
+          <div className="rounded-lg border border-white/10 bg-white/[0.03] px-2 py-1 text-[10px] font-black uppercase tracking-widest text-white/65">
             Preview
           </div>
         </div>
 
         <div className="mt-4 flex gap-2">
           <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/35" />
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/55" />
             <input
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
@@ -258,7 +258,7 @@ export function MapView() {
                 <MarkerIcon poi={poi} small />
                 <div className="min-w-0">
                   <div className="text-sm font-black leading-tight">{poi.name}</div>
-                  <div className="mt-1 text-[10px] uppercase tracking-widest text-white/40">
+                  <div className="mt-1 text-[10px] uppercase tracking-widest text-white/65">
                     {CATEGORY_META[poi.category].label} / {CONFIDENCE_META[poi.confidence].label} / {getConfidenceScore(poi.confidence)}/100
                   </div>
                 </div>
@@ -385,7 +385,7 @@ export function MapView() {
             <p className="text-[10px] font-black uppercase tracking-widest text-secondary">Source note</p>
             <p className="mt-1 text-xs leading-relaxed text-white/60">{selectedPOI.source}</p>
             {selectedPOI.reason && (
-              <p className="mt-2 text-xs leading-relaxed text-white/45">Why it matters: {selectedPOI.reason}</p>
+              <p className="mt-2 text-xs leading-relaxed text-white/65">Why it matters: {selectedPOI.reason}</p>
             )}
           </div>
           <div className="mt-3 grid grid-cols-2 gap-2">
@@ -414,7 +414,7 @@ export function MapView() {
 function ProofBox({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg border border-white/10 bg-white/[0.04] p-3">
-      <p className="text-[9px] font-black uppercase tracking-widest text-white/38">{label}</p>
+      <p className="text-[9px] font-black uppercase tracking-widest text-white/65">{label}</p>
       <p className="mt-1 text-xs font-bold leading-snug text-white/74">{value}</p>
     </div>
   );
@@ -424,7 +424,7 @@ function ConfidenceScore({ score, color }: { score: number; color: string }) {
   return (
     <div className="mt-2 rounded-lg border border-white/10 bg-white/[0.04] p-3">
       <div className="flex items-center justify-between">
-        <p className="text-[9px] font-black uppercase tracking-widest text-white/38">Confidence score</p>
+        <p className="text-[9px] font-black uppercase tracking-widest text-white/65">Confidence score</p>
         <p className="text-xs font-black" style={{ color }}>{score}/100</p>
       </div>
       <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/10">
@@ -470,7 +470,7 @@ function FilterButton({
       }}
     >
       <span className="flex min-w-0 items-center gap-2 truncate">{children}</span>
-      <span className="rounded bg-black/35 px-1.5 py-0.5 text-[10px] text-white/55">{count}</span>
+      <span className="rounded bg-black/35 px-1.5 py-0.5 text-[10px] text-white/65">{count}</span>
     </button>
   );
 }
@@ -545,7 +545,7 @@ function ClusterBadge({
       title={`${count} ${label} markers`}
     >
       <div className="text-xl font-black" style={{ color }}>{count}</div>
-      <div className="text-[9px] font-black uppercase tracking-widest text-white/58">{label}</div>
+      <div className="text-[9px] font-black uppercase tracking-widest text-white/65">{label}</div>
     </button>
   );
 }

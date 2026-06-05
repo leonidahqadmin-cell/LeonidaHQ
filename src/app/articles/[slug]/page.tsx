@@ -171,7 +171,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
           <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/72">
             {article.excerpt}
           </p>
-          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-heading text-[11px] font-black uppercase tracking-widest text-white/52">
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-heading text-[11px] font-black uppercase tracking-widest text-white/65">
             <span>Filed {article.publishDate}</span>
             <span>By {article.filedBy} / @viraltbf</span>
           </div>
@@ -306,7 +306,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
 function ReportStat({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg border border-white/10 bg-card/45 p-4">
-      <p className="font-heading text-[9px] uppercase tracking-widest text-white/45">
+      <p className="font-heading text-[9px] uppercase tracking-widest text-white/65">
         {label}
       </p>
       <p className="mt-2 text-sm font-semibold text-white/88">
@@ -319,7 +319,7 @@ function ReportStat({ label, value }: { label: string; value: string }) {
 function ReportLine({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <p className="font-heading text-[9px] uppercase tracking-widest text-white/42">
+      <p className="font-heading text-[9px] uppercase tracking-widest text-white/65">
         {label}
       </p>
       <p className="mt-1 text-white/78">

@@ -293,7 +293,7 @@ function SignalStat({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-lg border border-white/10 bg-background/70 p-3">
       <div className="text-lg font-black text-primary">{value}</div>
-      <div className="mt-1 text-[9px] uppercase tracking-widest text-white/52">{label}</div>
+      <div className="mt-1 text-[9px] uppercase tracking-widest text-white/65">{label}</div>
     </div>
   );
 }
@@ -323,7 +323,7 @@ function FeaturedCard({ article }: { article: ArticleLite }) {
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/82 sm:text-base">
             {article.excerpt}
           </p>
-          <p className="mt-4 font-heading text-[10px] uppercase tracking-widest text-white/50">
+          <p className="mt-4 font-heading text-[10px] uppercase tracking-widest text-white/65">
             Filed {article.publishDate}
           </p>
         </div>

@@ -48,7 +48,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 
 ## 🔎 SEO / SOCIAL
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
-- 🔜 Add `twitter.site` = @viraltbf
+- ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
 - 💡 Templated per-article OG cards (title overlay) via ImageResponse; FAQ schema on more pages
 
 ## 🧹 INFRA / PERF / HYGIENE
@@ -57,6 +57,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 🔜 Replace boilerplate README with a real runbook (dev :3001, env vars, deploy/DNS/Resend steps)
   - Env vars (Vercel Production): `RESEND_API_KEY` (required, signup emails) · `SUBSCRIBE_NOTIFY_TO` (optional, emails you per new signup — set to davisn2015@gmail.com) · `SUBSCRIBE_NOTIFY_TO` changes need a redeploy to take effect
 - 💡 Security headers in next.config; Core Web Vitals pass
+- 💡 GitHub repo was renamed (push warns "repository moved" → leonidahqadmin-cell/LeonidaHQ.git); update remote: `git remote set-url origin https://github.com/leonidahqadmin-cell/LeonidaHQ.git` to drop the redirect
 
 ## ⚠️ ROOT CAUSES / RISKS
 - 🔜 Find the Ghost husk auto-publisher (a Make/Zapier scenario) and set it to draft — the guard only band-aids it

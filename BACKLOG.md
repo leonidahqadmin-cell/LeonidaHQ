@@ -61,7 +61,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ **Embeddable countdown widget** — chrome-free noindex `/embed/countdown` (compact single-row timer + "via leonidahq.gg" backlink) + copy-paste iframe snippet on /countdown; verified fits 560×170 with backlink visible (8825190). Each embed = a backlink.
 - ✅ **FAQ schema (JSON-LD)** on 3 evergreen articles (file-size, beta-scam, subscription) via src/lib/article-faq.ts — conditional FAQPage script, curl-verified present on FAQ articles + absent on others (a05ae8b). Add more slugs to article-faq.ts to extend.
 - 🔜 **Core Web Vitals pass** (LCP/CLS/INP) — ranking factor; measure with Lighthouse, fix the worst offender.
-- 💡 Internal-linking pass (every article links the map + 2 related posts — spreads ranking authority); evergreen "GTA 6 release date" hub page that updates as the date nears.
+- ✅ Internal-linking pass — every article ends with a "Related intel" block (3 same-category-first articles + map link); verified 390px (97065df)
+- 💡 evergreen "GTA 6 release date" hub page that updates as the date nears.
 - 💡 YouTube Shorts/TikTok cut from the map/evidence (short-form, not Twitter/Reddit) → link in bio. Owned email list = the audience the algorithm can't take.
 
 ## 🧹 INFRA / PERF / HYGIENE

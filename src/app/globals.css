@@ -202,7 +202,7 @@
     border: 1px solid oklch(1 0 0 / 8%);
   }
 
-  /* Mobile typography: smaller Orbitron headings to avoid clip */
+  /* Mobile typography: smaller headings to avoid clip */
   @media (max-width: 640px) {
     .font-heading.text-6xl, .font-heading.text-5xl, h1.font-heading {
       font-size: 1.85rem !important;

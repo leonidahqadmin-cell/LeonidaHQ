@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Orbitron, Pacifico } from "next/font/google";
+import { Inter, Pacifico } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -9,12 +9,6 @@ import { SiteFooter } from "@/components/site-footer";
 const sans = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
-});
-
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800", "900"],
 });
 
 const script = Pacifico({
@@ -68,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${sans.variable} ${orbitron.variable} ${script.variable} antialiased`}
+      className={`dark ${sans.variable} ${script.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-background overflow-x-hidden">
         <SiteNav />

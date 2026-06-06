@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Briefcase,
   CheckSquare,
@@ -104,6 +104,49 @@ export function MapView() {
   const [showHeat, setShowHeat] = useState(false);
   const [showClusters, setShowClusters] = useState(true);
   const [coords, setCoords] = useState({ x: "0.000", y: "0.000" });
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [dragging, setDragging] = useState(false);
+  const dragRef = useRef<{ sx: number; sy: number; px: number; py: number } | null>(null);
+  const movedRef = useRef(false); // true after a real drag → suppress the pin click that follows
+
+  // Reset pan whenever we're back to no zoom (nothing to pan).
+  useEffect(() => {
+    if (zoom <= 1) setPan({ x: 0, y: 0 });
+  }, [zoom]);
+
+  // Clamp so the scaled artwork can't be dragged fully off-screen.
+  function clampPan(x: number, y: number, rect: DOMRect) {
+    const maxX = (Math.max(zoom, 1) - 1) * rect.width * 0.5;
+    const maxY = (Math.max(zoom, 1) - 1) * rect.height * 0.5;
+    return {
+      x: Math.max(-maxX, Math.min(maxX, x)),
+      y: Math.max(-maxY, Math.min(maxY, y)),
+    };
+  }
+
+  function onMapPointerDown(e: React.PointerEvent<HTMLDivElement>) {
+    movedRef.current = false; // every interaction starts "unmoved" (clears any stale drag flag)
+    if (zoom <= 1) return; // panning only matters when zoomed in
+    dragRef.current = { sx: e.clientX, sy: e.clientY, px: pan.x, py: pan.y };
+    setDragging(true);
+    e.currentTarget.setPointerCapture(e.pointerId);
+  }
+  function onMapPointerMove(e: React.PointerEvent<HTMLDivElement>) {
+    const d = dragRef.current;
+    if (!d) return;
+    const dx = e.clientX - d.sx;
+    const dy = e.clientY - d.sy;
+    if (Math.abs(dx) > 6 || Math.abs(dy) > 6) movedRef.current = true;
+    setPan(clampPan(d.px + dx, d.py + dy, e.currentTarget.getBoundingClientRect()));
+  }
+  function endDrag(e: React.PointerEvent<HTMLDivElement>) {
+    if (!dragRef.current) return;
+    dragRef.current = null;
+    setDragging(false);
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch {}
+  }
 
   const countsByCategory = useMemo(() => {
     return LEONIDA_POIS.reduce<Record<string, number>>((acc, poi) => {
@@ -270,8 +313,17 @@ export function MapView() {
 
       <section className="relative order-1 min-h-[420px] overflow-hidden bg-black lg:order-2 lg:min-h-[620px]">
         <div
-          className="absolute inset-0 origin-center transition duration-300"
-          style={{ transform: `scale(${zoom})` }}
+          className="absolute inset-0 origin-center"
+          style={{
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+            transition: dragging ? "none" : "transform 300ms",
+            cursor: zoom > 1 ? (dragging ? "grabbing" : "grab") : "default",
+            touchAction: zoom > 1 ? "none" : "auto",
+          }}
+          onPointerDown={onMapPointerDown}
+          onPointerMove={onMapPointerMove}
+          onPointerUp={endDrag}
+          onPointerLeave={endDrag}
           onMouseMove={(event) => {
             const rect = event.currentTarget.getBoundingClientRect();
             const x = ((event.clientX - rect.left) / rect.width) * 100;
@@ -297,7 +349,6 @@ export function MapView() {
               <path d="M14 81 C32 70, 45 70, 59 58 S78 53, 90 40" fill="none" stroke="#FF2D78" strokeWidth="0.32" strokeDasharray="1 1.3" />
             </svg>
           )}
-        </div>
 
         {showClusters && (
           <>
@@ -313,7 +364,13 @@ export function MapView() {
           return (
             <button
               key={poi.id}
-              onClick={() => setSelectedPOI(poi)}
+              onClick={() => {
+                if (movedRef.current) {
+                  movedRef.current = false;
+                  return; // this "click" was the end of a pan drag — ignore it
+                }
+                setSelectedPOI(poi);
+              }}
               className="absolute z-10 grid min-h-[44px] min-w-[44px] -translate-x-1/2 -translate-y-1/2 place-items-center transition hover:z-20 hover:scale-110"
               style={position}
               aria-label={poi.name}
@@ -322,6 +379,7 @@ export function MapView() {
             </button>
           );
         })}
+        </div>
 
         <div className="absolute left-1/2 top-16 z-30 -translate-x-1/2 rounded-full border border-white/15 bg-black/60 px-5 py-3 shadow-xl backdrop-blur lg:top-4">
           <p className="text-center text-[10px] font-black uppercase tracking-widest text-secondary">State of Leonida</p>

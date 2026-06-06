@@ -268,4 +268,36 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "The analysis suggests pre-ordering the standard edition (the deluxe extras aren't worth the +$30), or waiting roughly six months for Take-Two's typical holiday sale that tends to drop the price to $59-69.",
     },
   ],
+  "threat-assessment-online-migration": [
+    {
+      q: "Will GTA Online progress transfer to GTA 6?",
+      a: "Almost certainly not — the analysis puts roughly 85% odds on no migration. A no-migration scenario projects about 2.3x the lifetime revenue of letting players carry over, which dominates the decision for a public company.",
+    },
+    {
+      q: "Why won't my GTA Online money and characters carry over?",
+      a: "Without migration, players re-buy the equivalent of what they had, driving more revenue. And if migration were happening, Rockstar would already be marketing it — as they did for GTA V to GTA Online in 2013. The silence is the signal.",
+    },
+    {
+      q: "What should I do with my GTA Online money before GTA 6?",
+      a: "Spend the in-game cash you've saved, finish crew-dependent content in the next ~90 days, stop buying shark cards (they won't transfer), and coordinate with your crew about reconstituting in GTA 6 Online.",
+    },
+    {
+      q: "When is the best time to play GTA 6 Online?",
+      a: "The first 30 days (November-December 2026). Everyone starts at zero, prices are at their lowest, payouts are most generous, and early money exploits appear — a one-time economic window that won't recur.",
+    },
+  ],
+  "20-days-to-marketing": [
+    {
+      q: "When does GTA 6 marketing start?",
+      a: "Take-Two CEO Strauss Zelnick signaled marketing begins 'when summer hits' — late June or early July 2026 at the latest, a notably specific window from a company that rarely commits to timing.",
+    },
+    {
+      q: "What will GTA 6's summer marketing push include?",
+      a: "Likely a cluster of three: Trailer 3 (real gameplay slices, more of Jason, second-city confirmation), pre-orders opening with a price reveal, and the full marketing machine — key art, TV spots, and social.",
+    },
+    {
+      q: "When is GTA 6 Trailer 3 expected?",
+      a: "Rockstar's pattern is one major trailer per year (December 2023, December 2025), so the next logical drop lands in the June-August window — late June is a credible earliest date, but Rockstar hasn't confirmed one.",
+    },
+  ],
 };

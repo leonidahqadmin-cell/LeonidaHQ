@@ -208,4 +208,32 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "At this scale the map is the platform for a decade of GTA Online. A second city isn't a nice-to-have — it's table stakes for the live-service model to sustain itself for ten-plus years.",
     },
   ],
+  "state-of-play-reality-check": [
+    {
+      q: "Was GTA 6 at State of Play?",
+      a: "No — GTA 6 did not appear at Sony's State of Play. That isn't a delay signal; Rockstar controls its own marketing rather than surfacing inside someone else's showcase.",
+    },
+    {
+      q: "Does skipping State of Play mean GTA 6 is delayed?",
+      a: "No. The real signals — Take-Two's summer marketing window and Rockstar's quiet infrastructure and community-channel moves — all still point the same direction. The November 19, 2026 date stands.",
+    },
+    {
+      q: "When will the next GTA 6 news drop?",
+      a: "Most likely through Rockstar or Take-Two directly — a standalone trailer, store-page movement, or screenshots — not a partner showcase. Any exact Trailer 3 date (late-June/early-July guesses) is rumor until official.",
+    },
+  ],
+  "real-leonida-locations": [
+    {
+      q: "What real places inspired GTA 6's Leonida?",
+      a: "Leonida is Florida with the serial numbers filed off: Vice City is Miami / South Beach, the swamps come straight from the real Everglades, and the inland 'second city' reads like Tampa, Orlando, or Jacksonville.",
+    },
+    {
+      q: "Is Vice City based on Miami?",
+      a: "Yes — Vice City has always been Miami with the names changed: the strip, the neon, and the art deco are all lifted from South Beach.",
+    },
+    {
+      q: "Is the Leonida map based on real geography?",
+      a: "The plotted pins line up with real Florida landmarks — ports, old drive-ins, new-money shopping districts — and the map appears built from real satellite data and research, as Rockstar did for Los Santos and Liberty City.",
+    },
+  ],
 };

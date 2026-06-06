@@ -33,7 +33,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Added `.btn-sm` + `.btn-primary-outline` variants and unified follow-sidebar's "Follow on X" + email-capture buttons; computed-styles verified (pink/teal, full-width preserved) (8ad7690). Button system now fully consistent.
 - ✅ Low-contrast text → white/65 (WCAG AA) — bumped 14 faint labels/meta across map-view, article header, homepage stats; verified 390px (9ff7377)
 - ✅ Orbitron: DROPPED — it was loaded (5 weights) but .font-heading maps to Inter, so it was never rendered. Removed for faster load, zero visual change (8b2ae7f). OPTIONAL: wiring `--font-heading`→`var(--font-orbitron)` would give a sci-fi heading look — a deliberate restyle for the user to greenlight, not auto-ship.
-- 💡 Prune dead/no-op CSS (glow/cyber/holo classes); proper favicon (currently a 700KB PNG)
+- ✅ Favicon fixed — 704KB PNG → app/icon.png (3.2KB) + app/favicon.ico (3.9KB), downscaled from the logo; head links both (8e492a4)
+- 💡 Prune dead/no-op CSS (glow/cyber/holo classes)
 
 ## 🗺️ THE MAP (crown feature / the moat)
 - ✅ Confidence system, deep detail panel, source notes, share-to-X, derived "last updated"

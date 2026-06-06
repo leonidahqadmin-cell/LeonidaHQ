@@ -24,6 +24,25 @@ function isFutureDate(date: string) {
   return publishDate.getTime() > today.getTime();
 }
 
+// Desk byline varies by category (instead of a flat "LeonidaHQ Desk" everywhere).
+// Applied at read-time so every render site (byline, sidebar, JSON-LD author) stays in sync.
+const DESK_BY_CATEGORY: Record<string, string> = {
+  news: "News Desk",
+  analysis: "Intel Desk",
+  predictions: "Forecast Desk",
+  leaks: "Leaks Desk",
+  map: "Map Desk",
+  characters: "Lore Desk",
+  lore: "Lore Desk",
+  online: "Online Desk",
+  business: "Business Desk",
+  "field report": "Field Desk",
+};
+
+function deskFor(category: string): string {
+  return DESK_BY_CATEGORY[category.toLowerCase().trim()] ?? "Leonida Desk";
+}
+
 function readAllFiles(): Article[] {
   if (!fs.existsSync(ARTICLES_DIR)) return [];
   const files = fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith(".md"));
@@ -43,12 +62,20 @@ function readAllFiles(): Article[] {
         throw new Error(`Article ${file} is missing required frontmatter (title, slug, publishDate)`);
       }
 
+      const category = String(data.category ?? "Field Report");
+      const rawFiledBy = String(data.filedBy ?? "");
+      // Generic placeholder bylines get a category-specific desk; bespoke ones are kept.
+      const filedBy =
+        !rawFiledBy || rawFiledBy === "LeonidaHQ Desk" || rawFiledBy === "Bureau Desk"
+          ? deskFor(category)
+          : rawFiledBy;
+
       return {
         slug: String(data.slug),
         title: String(data.title),
         publishDate: String(data.publishDate),
-        filedBy: String(data.filedBy ?? "Bureau Desk"),
-        category: String(data.category ?? "Field Report"),
+        filedBy,
+        category,
         classification: data.classification ? String(data.classification) : undefined,
         excerpt: String(data.excerpt ?? ""),
         tags: Array.isArray(data.tags) ? data.tags.map(String) : [],

@@ -226,6 +226,13 @@
   .btn-tertiary {
     @apply border border-white/15 text-foreground font-heading uppercase tracking-widest text-xs font-black px-5 py-3 rounded-lg hover:bg-white/10 transition inline-flex items-center justify-center;
   }
+  .btn-primary-outline {
+    @apply border border-[#FF2D78]/70 text-[#FF2D78] font-heading uppercase tracking-widest text-xs font-black px-5 py-3 rounded-lg hover:bg-[#FF2D78] hover:text-black transition inline-flex items-center justify-center;
+  }
+  /* size modifier — declared after the base buttons so its padding wins */
+  .btn-sm {
+    @apply px-4 py-2;
+  }
 
   .surface {
     @apply rounded-lg border border-white/10 bg-card/55;

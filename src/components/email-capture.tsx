@@ -52,7 +52,7 @@ export function EmailCapture({ variant = "default" }: Props) {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full inline-flex items-center justify-center gap-2 border border-secondary text-secondary uppercase tracking-widest text-xs font-bold px-4 py-2 rounded hover:bg-secondary hover:text-secondary-foreground transition disabled:opacity-50"
+          className="btn-secondary btn-sm w-full gap-2 disabled:opacity-50"
         >
           {status === "loading" ? "..." : "Subscribe Free →"}
         </button>
@@ -73,7 +73,7 @@ export function EmailCapture({ variant = "default" }: Props) {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-primary text-primary-foreground font-semibold rounded-lg px-6 py-3 hover:opacity-90 transition disabled:opacity-50"
+        className="btn-primary disabled:opacity-50"
       >
         {status === "loading" ? "..." : "Notify me"}
       </button>

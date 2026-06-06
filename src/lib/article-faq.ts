@@ -180,4 +180,32 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "Likely the full GTA Online reveal, the exact economy structure, major story spoilers, deep mission walkthroughs, and the full map — those are launch-window weapons.",
     },
   ],
+  "second-city-evidence": [
+    {
+      q: "Does GTA 6 have a second city besides Vice City?",
+      a: "Rockstar hasn't said it outright, but Trailer 2 shows multiple distinct skylines, inland architecture and vegetation that don't match the coast within a short drive, and geography that doesn't loop — strong evidence of a second major metro.",
+    },
+    {
+      q: "Why does the name 'Leonida' suggest two cities?",
+      a: "Every prior Rockstar title using a state name (Liberty State, San Andreas) had multiple major population centers. State-level 'Leonida' branding only makes sense if there's more than one signature city.",
+    },
+    {
+      q: "What don't we know about the second city yet?",
+      a: "Its name, its character (more modern? more industrial?), and how seamless travel between the metros actually feels in gameplay — details Trailer 3 may finally deliver.",
+    },
+  ],
+  "billion-dollar-map": [
+    {
+      q: "How much did GTA 6 cost to make?",
+      a: "Take-Two referenced a development budget exceeding $1 billion in earnings commentary — confirmed public record, not a leak — making GTA 6 one of the most expensive games ever produced.",
+    },
+    {
+      q: "What does GTA 6's $1B+ budget pay for?",
+      a: "Two distinct major cities, multiple biomes and verticality (rooftops, interiors, water, swamps), buyable businesses and passive-income systems for Online, and high-fidelity ambient life across the whole state.",
+    },
+    {
+      q: "Why does the budget point to a second city?",
+      a: "At this scale the map is the platform for a decade of GTA Online. A second city isn't a nice-to-have — it's table stakes for the live-service model to sustain itself for ten-plus years.",
+    },
+  ],
 };

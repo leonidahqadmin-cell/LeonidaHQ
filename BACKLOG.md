@@ -41,7 +41,16 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Populated the **Confirmed/Official** tier — 2 pins (Vice Beach coast + Leonida swamp) promoted because Rockstar SHOWS those environments in official trailers; reworded so "Confirmed" = location shown, not gameplay (no rumor mislabeled). Legend top no longer dead (4aff26a)
 - ✅ Stamped `lastUpdated` on all 25 pins (was 5); derived header now honest (4aff26a)
 - 👀 Watch: cluster badge "Trailer" count looked like 11 in a dev screenshot vs expected 9 (2 promoted to Confirmed) — likely a stale-render artifact; confirm on live map after deploy.
-- 💡 Real interactive map (maplibre + GeoJSON) instead of the static JPG — big lift, real moat
+### 🗺️ REAL MAP — research + phased plan (scoped 2026-06, NOT built)
+**How it works today:** `/img/map-illustration.jpg` rendered via next/image (fill, object-contain, CSS `scale(1.42)`) as a static backdrop. Pins are absolute-positioned `<button>`s — `pinPosition(poi)` linearly maps `poi.lng/lat` (real Miami coords ~25.7/-80.1) through `MAP_BOUNDS` to left/top % (clamped 4-96%). "Zoom" is a single `transform: scale()` (1→1.7) on the whole container — **there is NO pan/drag** (zoom in and you're stuck centered). Plus: cluster toggle (fake `ClusterBadge`s vs individual pins), category + confidence filters, bottom-sheet detail panel, optional heat/routes overlays, mousemove coord readout, 44px tap targets.
+**The #1 gotcha — fictional geography:** the lat/lng are real Miami but only used to position pins on the ARTWORK. A real maplibre/leaflet map with real-world tiles would place pins on actual Miami = WRONG (Leonida/Vice City is fictional). A real map MUST use the Leonida artwork as the basemap (image/raster layer), NOT geographic tiles. Leaflet + `L.CRS.Simple` + `L.imageOverlay` is the standard "game/fantasy map" pattern and is far lighter (~40KB) than re-adding maplibre-gl (~230KB, removed in d19cf8b).
+**Risks:** bundle bloat; reworking ~580 lines of map-view.tsx to preserve confidence/cluster/filter/panel/share; SSR (needs dynamic import ssr:false — leaflet/maplibre need `window`); mobile gesture conflict (map pan vs page scroll); the artwork is stylized illustration, not true cartography — deep zoom exposes it as art.
+**Phased plan:**
+- **Phase 0 (cheap, no deps, biggest UX gain):** add drag-to-pan to the current static map — wrap the scaled artwork+pins in a pointer-drag container that translates X/Y when zoomed. Closes the real "can zoom but can't move" gap. ~1 cycle.
+- **Phase 1:** Leaflet + CRS.Simple + imageOverlay of the artwork; pins → Leaflet markers from existing coords; dynamic import ssr:false; reimplement the click→panel.
+- **Phase 2:** leaflet.markercluster for real clustering (replaces fake badges); filters as layer toggles.
+- **Phase 3:** pin search, deep-link `/map#pin-id`, share.
+**RECOMMENDATION:** the current static map is genuinely good (pins, filters, confidence tiers, panel, zoom, clusters, overlays) — the only real miss is **pan**. Do **Phase 0** (drag-to-pan) as a high-value/low-risk win; **defer Phases 1-3** (full Leaflet rework) unless the map becomes a primary growth driver — the ROI vs. bundle-bloat + 580-line rework isn't there yet. Verdict: static map is "good enough" for launch; just add pan.
 - 💡 Pin search, deep-link `/map#pin`, real proximity clustering
 
 ## ⚠️ FOUND: stale-domain slop cover
@@ -58,7 +67,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
 - ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
 - ✅ Per-article dynamic OG cards via next/og ImageResponse — branded title card per article, auto-wired to og:image + twitter:image; verified PNG render (ea6e72d)
-- 💡 FAQ schema on more pages (extend src/lib/article-faq.ts with more slugs)
+- ✅ FAQ schema extended to 6 articles total (added no-third-delay, review-copies, originally-2025 — release-date cluster) (42adfa4). Can extend further to table-tennis/why-we-waited/rdr2-mechanic anytime.
 
 ## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)
 - ✅ Built **/countdown** — live ticking countdown to Nov 19 2026, keyword-targeted title/meta/h1/canonical for "gta 6 countdown / release date", FAQPage JSON-LD, internal links, sitemap (0.9) + footer nav, X hook queued (e957e3b)

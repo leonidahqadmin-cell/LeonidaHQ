@@ -3,6 +3,9 @@ import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: "*", allow: "/", disallow: ["/api/"] }],
-    sitemap: "https://leonidahq.gg/sitemap.xml",
+    sitemap: [
+      "https://leonidahq.gg/sitemap.xml",
+      "https://leonidahq.gg/news-sitemap.xml",
+    ],
   };
 }

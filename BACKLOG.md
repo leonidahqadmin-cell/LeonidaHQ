@@ -55,7 +55,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 
 ## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)
 - ✅ Built **/countdown** — live ticking countdown to Nov 19 2026, keyword-targeted title/meta/h1/canonical for "gta 6 countdown / release date", FAQPage JSON-LD, internal links, sitemap (0.9) + footer nav, X hook queued (e957e3b)
-- 🔜 **Keyword-target the /map page** <title>/h1/meta for "gta 6 map" (the page metadata is currently generic — make it match the search)
+- ✅ Keyword-targeted **/map** for "gta 6 map" — title/desc/keywords/canonical + OG/Twitter retuned (was generic "Leonida Map"); curl-verified (52fb8af)
+- ⚠️ **CANONICAL HOST SPLIT (found June 6, needs USER Vercel decision):** site serves on **www**.leonidahq.gg but apex leonidahq.gg does a *307 (temporary)* redirect to www — while all canonical tags/sitemap/robots point to the **apex**. Google sees a split signal. FIX = pick ONE canonical host (recommend bare apex `leonidahq.gg`): in Vercel → Domains, set leonidahq.gg as primary + redirect www→apex (308 permanent). Then app's apex canonicals match reality. Until decided, indexing is muddied.
 - 🔜 **Google News sitemap** (`/news-sitemap.xml`, last-48h articles) + publisher metadata, so GTA6 news spikes send organic waves (how IGN/GameRant pull millions). Then user submits site to Google News/Publisher Center.
 - 🔜 **Embeddable countdown widget** (`/embed/countdown` iframe + copy-embed snippet) — a linkable "days until GTA 6" other sites/Discords paste = backlinks + referral traffic. Map = same play (shareable deep-links).
 - 🔜 **FAQ schema (JSON-LD)** on the big evergreen articles (file-size, release-date, beta-scam) to win rich results / "People also ask" real estate.

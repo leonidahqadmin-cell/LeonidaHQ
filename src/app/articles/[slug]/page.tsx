@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
+import { ARTICLE_FAQ } from "@/lib/article-faq";
 import { getArticleImage } from "@/lib/article-images";
 
 type Params = Promise<{ slug: string }>;
@@ -131,12 +132,31 @@ export default async function ArticlePage({ params }: { params: Params }) {
     keywords: article.tags.join(", "),
   };
 
+  const faq = ARTICLE_FAQ[article.slug];
+  const faqJsonLd = faq
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faq.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       {/* Hero cover */}
       <section className="relative w-full border-b border-white/10">
         <div className="relative h-[520px] w-full overflow-hidden">

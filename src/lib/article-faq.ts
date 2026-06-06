@@ -54,4 +54,46 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "No. Nothing about GTA 6's monetization is confirmed. The safe expectation is a full-price game with an optional online membership for extras — not a mandatory subscription. Anyone claiming more right now is guessing.",
     },
   ],
+  "no-third-delay": [
+    {
+      q: "When does GTA 6 come out?",
+      a: "Grand Theft Auto VI is confirmed for November 19, 2026 on PlayStation 5 and Xbox Series X|S.",
+    },
+    {
+      q: "Will GTA 6 be delayed again?",
+      a: "A third delay is unlikely. The November 19, 2026 date is now built into Take-Two's financial guidance to investors — slipping it would mean restating Wall Street projections, not just a quiet development push.",
+    },
+    {
+      q: "Why is this date more reliable than the earlier ones?",
+      a: "Earlier targets were broad marketing windows. The current date is tied to Take-Two's record fiscal-2027 guidance, which makes it a far stronger commitment than a launch window ever was.",
+    },
+  ],
+  "review-copies": [
+    {
+      q: "When do GTA 6 reviews come out?",
+      a: "Most likely mid-November 2026, around launch week. Tentpole games typically get review code one to two weeks ahead, with an embargo that lifts a few days before or on launch day.",
+    },
+    {
+      q: "Will there be early GTA 6 review access?",
+      a: "Rockstar is historically tight with pre-release access, so the review embargo may lift just a day or two before the November 19 launch rather than well in advance.",
+    },
+    {
+      q: "Are 'leaked GTA 6 reviews' before launch real?",
+      a: "Be cautious — any 'review' that appears before the official embargo is a classic scam vector. The real verdicts arrive in a clear, coordinated wave.",
+    },
+  ],
+  "originally-2025": [
+    {
+      q: "Was GTA 6 supposed to come out in 2025?",
+      a: "Yes — Rockstar's first trailer attached a broad 2025 window. It later narrowed to fall 2025, moved to early 2026, and finally landed on the confirmed November 19, 2026 date.",
+    },
+    {
+      q: "Why was GTA 6 delayed from 2025?",
+      a: "To give Rockstar more time to polish the largest open world it has ever built. Big delays on flagship titles are the norm across the industry, not the exception.",
+    },
+    {
+      q: "Is the GTA 6 release date final now?",
+      a: "The November 19, 2026 date is firm and tied to Take-Two's financial guidance — a much stronger anchor than the early marketing window ever was.",
+    },
+  ],
 };

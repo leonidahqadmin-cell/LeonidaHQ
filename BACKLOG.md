@@ -34,7 +34,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Low-contrast text → white/65 (WCAG AA) — bumped 14 faint labels/meta across map-view, article header, homepage stats; verified 390px (9ff7377)
 - ✅ Orbitron: DROPPED — it was loaded (5 weights) but .font-heading maps to Inter, so it was never rendered. Removed for faster load, zero visual change (8b2ae7f). OPTIONAL: wiring `--font-heading`→`var(--font-orbitron)` would give a sci-fi heading look — a deliberate restyle for the user to greenlight, not auto-ship.
 - ✅ Favicon fixed — 704KB PNG → app/icon.png (3.2KB) + app/favicon.ico (3.9KB), downscaled from the logo; head links both (8e492a4)
-- 💡 Prune dead/no-op CSS (glow/cyber/holo classes)
+- ✅ Pruned 8 zero-reference CSS classes (neon-box, glass, cyber-card, holo-text, futuristic-grid, dossier, parallax*) + keyframes holo — ~90 lines gone, no regression (275051a). NOTE: .glow-primary/.glow-secondary are now no-ops (text-shadow:none) but referenced 9/7× in JSX — could strip those refs + classes in a future cleanup.
 
 ## 🗺️ THE MAP (crown feature / the moat)
 - ✅ Confidence system, deep detail panel, source notes, share-to-X, derived "last updated"

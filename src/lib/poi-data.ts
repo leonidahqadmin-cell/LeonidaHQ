@@ -1,5 +1,7 @@
 // Leonida map evidence data. Pins are based on trailer analysis, logic, and community signals.
 // Confidence levels indicate how solid the evidence is.
+// "Confirmed" is reserved for environments Rockstar has shown directly in official trailers —
+// the LOCATION is confirmed even when the theorized gameplay use is not.
 
 export type POICategory = "story" | "collectible" | "hidden" | "business";
 
@@ -24,18 +26,18 @@ export type POI = {
 export const LEONIDA_POIS: POI[] = [
   {
     id: "poi-1",
-    name: "Vice Beach Pier Area",
+    name: "Vice Beach / Ocean Drive Coast",
     category: "story",
     lat: 25.79,
     lng: -80.13,
     description:
-      "Coastal story-signal zone. Trailer framing makes this feel like an early meeting, chase, or setup location, but no mission is confirmed.",
-    confidence: "Trailer Evidence",
-    source: "Trailer 2 coastal shots + common GTA mission structure",
-    reason: "Pier lighting, traffic flow, and character staging match a Rockstar-style intro space.",
-    evidenceType: "Trailer frame read",
+      "Vice City's neon beachfront is confirmed — Rockstar's official trailers show this coastline directly. The specific early-mission use here is still a trailer-frame read, not confirmed gameplay.",
+    confidence: "Confirmed",
+    source: "Official GTA 6 Trailers 1 & 2 (confirmed Vice City coastline)",
+    reason: "The beach, Ocean Drive neon, and traffic flow are shown on screen; the mission framing is the speculative part.",
+    evidenceType: "Confirmed environment",
     relatedArticle: "real-leonida-locations",
-    lastUpdated: "2026-06-03",
+    lastUpdated: "2026-06-06",
     evidenceImage: "/img/leonida-map-preview.jpg",
   },
   {
@@ -113,6 +115,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Weak Theory",
     source: "Community theory + neon sign closeups in trailers",
     reason: "Neon landmarks are easy to remember and often become collectible anchors.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-7",
@@ -125,6 +128,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 2 urban geometry + heist mission patterns from GTA V",
     reason: "The triangle road shape creates natural approach and escape paths.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-8",
@@ -137,6 +141,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Trailer 1 basement interiors + audio cues",
     reason: "The lighting and crowd framing fit an optional activity space.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-9",
@@ -149,6 +154,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 2 beach footage + collectible logic",
     reason: "Tall beach objects make strong discovery landmarks.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-10",
@@ -161,6 +167,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Rockstar marketing assets + classic GTA heist target",
     reason: "Vangelico has GTA history, and luxury strips are natural mission targets.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-11",
@@ -173,6 +180,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 1 warehouse interiors",
     reason: "Warehouse interiors and rooftop access are strong GTA setup patterns.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-12",
@@ -185,6 +193,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Weak Theory",
     source: "Community theory + abandoned location logic",
     reason: "Drive-ins are memorable landmarks and easy to reuse for exploration.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-13",
@@ -197,6 +206,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Trailer 2 vehicle custom shots + side activity patterns",
     reason: "Vehicle modification and resale systems are natural GTA side loops.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-14",
@@ -209,10 +219,11 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Rockstar assets + recurring GTA brand",
     reason: "Long-running GTA brands often become worldbuilding anchors.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-15",
-    name: "Vice City Port Heist",
+    name: "Vice City Port",
     category: "story",
     lat: 25.73,
     lng: -80.11,
@@ -221,6 +232,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Trailer 2 port and water shots",
     reason: "Ports create natural vehicle variety: boats, trucks, cranes, and escape routes.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-16",
@@ -233,6 +245,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Weak Theory",
     source: "Trailer 2 south beach angles",
     reason: "Abandoned spots invite exploration and make good low-noise collectible candidates.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-17",
@@ -245,6 +258,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 1 museum-style interiors + GTA V Kortz reference",
     reason: "Museum-style spaces naturally support stealth, security, and set-piece missions.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-18",
@@ -257,6 +271,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Weak Theory",
     source: "Community theory + scrapyard visuals",
     reason: "Scrapyards are built for search-and-discover gameplay.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-19",
@@ -269,18 +284,21 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Rockstar casino assets + GTA V Diamond Casino parallel",
     reason: "Casino spaces fit Vice City tone and GTA Online-style social systems.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-20",
-    name: "Swamp Hideout",
+    name: "Leonida Swamp / Everglades",
     category: "hidden",
     lat: 25.71,
     lng: -80.25,
     description:
-      "Swamp hideout theory. Inland footage makes this a strong candidate for off-grid story beats or side activity.",
-    confidence: "Trailer Evidence",
-    source: "Trailer 2 swamp and inland shots",
-    reason: "Swamps are Leonida's natural contrast to the neon coast.",
+      "Leonida's inland wetlands are confirmed — Rockstar's official trailers show airboats and Everglades-style swamp directly. A specific off-grid hideout here is still a theory layered on a confirmed environment.",
+    confidence: "Confirmed",
+    source: "Official GTA 6 Trailer 1 (confirmed swamp / Everglades environment)",
+    reason: "The wetlands, airboats, and wildlife are shown on screen; the 'hideout' use is the speculative part.",
+    evidenceType: "Confirmed environment",
+    lastUpdated: "2026-06-06",
   },
   {
     id: "poi-21",
@@ -293,6 +311,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 2 aerial and tram-like structures",
     reason: "Elevated transport gives Rockstar easy movement, views, and chase geometry.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-22",
@@ -305,6 +324,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 2 highway and sign closeups",
     reason: "Highway signs are easy-to-share landmarks and natural elevated hiding spots.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-23",
@@ -317,6 +337,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Weak Theory",
     source: "Community theory + water facility logic",
     reason: "GTA has used water for hidden content before, but this one remains a weak read.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-24",
@@ -329,6 +350,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Trailer Evidence",
     source: "Rockstar assets + GTA V Vinewood parallel",
     reason: "Large signs and media landmarks are core GTA worldbuilding tools.",
+    lastUpdated: "2026-06-04",
   },
   {
     id: "poi-25",
@@ -341,6 +363,7 @@ export const LEONIDA_POIS: POI[] = [
     confidence: "Strong Theory",
     source: "Trailer 2 finale-style lighting + mission structure logic",
     reason: "The area has the density and lighting Rockstar often uses for major set pieces.",
+    lastUpdated: "2026-06-04",
   },
 ];
 

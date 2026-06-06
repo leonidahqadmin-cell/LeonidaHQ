@@ -7,6 +7,7 @@ const SLUG_IMAGES: Record<string, string> = {
   "rockstar-workers-organizing": "/img/vice-city-neon-hero.jpg",
   "no-third-delay": "/img/article-two-cities.jpg",
   "originally-2025": "/img/vice-city-neon-hero.jpg",
+  "review-copies": "/img/article-two-cities.jpg",
   "asset-profile-caminos-duclos": "/img/article-lucia-jason.jpg",
   "lucia-jason-deep-dive": "/img/article-lucia-jason.jpg",
   "two-cities-online": "/img/article-two-cities.jpg",

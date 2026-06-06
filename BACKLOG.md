@@ -43,6 +43,9 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 💡 Real interactive map (maplibre + GeoJSON) instead of the static JPG — big lift, real moat
 - 💡 Pin search, deep-link `/map#pin`, real proximity clustering
 
+## ⚠️ FOUND: stale-domain slop cover
+- 🔜 `social-card-premium.jpg` is a busy promo card ("THE INTEL DESK FOR GTA VI / LEAKED FOOTAGE") that shows the **stale domain LEONIDAHQ.XYZ** (should be .gg) — and it's the SLUG/CATEGORY cover for multiple articles (fake-gta-6-beta-scam-warning, could-gta-6-get-a-subscription-model, launch-day-economy, discord-gta6-channel-signals + business category). Swap these to clean skylines (READ images first — filenames lie). Wrong-domain branding on live article heroes is a real credibility/SEO smell.
+
 ## ✍️ CONTENT / TRUST
 - 🔜 Standardize the know/think/rumor/source structure on articles that lack it
 - 🔜 Add real source links (bodies currently only cite @viraltbf)

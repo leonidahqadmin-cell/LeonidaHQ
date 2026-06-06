@@ -102,6 +102,16 @@ export default async function ArticlePage({ params }: { params: Params }) {
   const trustProfile = getTrustProfile(article);
   const reportSections = getReportSections(article);
 
+  // Related intel: same-category first (getAllArticles is already newest-first), then fill.
+  const related = getAllArticles()
+    .filter((a) => a.slug !== article.slug)
+    .sort(
+      (a, b) =>
+        (a.category === article.category ? 0 : 1) -
+        (b.category === article.category ? 0 : 1)
+    )
+    .slice(0, 3);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -319,6 +329,41 @@ export default async function ArticlePage({ params }: { params: Params }) {
           </div>
         </aside>
       </section>
+
+      {related.length > 0 && (
+        <section className="container mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-10">
+            <h2 className="font-heading text-xl font-black uppercase tracking-tight text-secondary sm:text-2xl">
+              Related intel
+            </h2>
+            <Link
+              href="/map"
+              className="font-heading text-xs font-black uppercase tracking-widest text-primary transition hover:opacity-80"
+            >
+              Open the map -&gt;
+            </Link>
+          </div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            {related.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/articles/${r.slug}`}
+                className="surface group rounded-lg p-5 transition hover:border-secondary/50"
+              >
+                <span className="font-heading text-[10px] font-black uppercase tracking-widest text-secondary">
+                  {r.category}
+                </span>
+                <h3 className="mt-2 font-heading text-base font-black leading-tight transition group-hover:text-primary">
+                  {r.title}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-white/65">
+                  {r.excerpt}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </>
   );
 }

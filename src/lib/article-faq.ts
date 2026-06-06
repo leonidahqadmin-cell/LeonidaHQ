@@ -236,4 +236,36 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "The plotted pins line up with real Florida landmarks — ports, old drive-ins, new-money shopping districts — and the map appears built from real satellite data and research, as Rockstar did for Los Santos and Liberty City.",
     },
   ],
+  "lucia-jason-deep-dive": [
+    {
+      q: "Who are Lucia and Jason in GTA 6?",
+      a: "They're GTA 6's dual protagonists — a Bonnie-and-Clyde-style criminal duo and the emotional core of the game. Across two trailers we've seen them act, but not yet reveal who they really are.",
+    },
+    {
+      q: "What does Trailer 3 need to show about Lucia and Jason?",
+      a: "A personal (non-heist) moment between them, individual agency where they disagree, a clear flaw or moral line one won't cross, and a hint at the thematic stakes of the ending.",
+    },
+    {
+      q: "How much has Jason spoken in GTA 6 trailers?",
+      a: "Fewer than ten words across the first two trailers — part of why their relationship still lacks texture heading into launch.",
+    },
+  ],
+  "the-90-dollar-question": [
+    {
+      q: "How much will GTA 6 cost?",
+      a: "Nothing is officially confirmed, but the base-case prediction is $90 for the standard edition (~60% likely), with $80 (~25%) and $70 (~5%) less likely. Take-Two has repeatedly telegraphed premium, value-based pricing.",
+    },
+    {
+      q: "Why would GTA 6 be $90?",
+      a: "Three reasons: Take-Two's 'pricing based on value delivered' earnings language, GTA's famously inelastic launch demand, and the chance for GTA 6 to set a new industry-wide $90 ceiling other publishers follow.",
+    },
+    {
+      q: "What GTA 6 editions are expected?",
+      a: "Likely three: Standard (~$90), Deluxe (~$120, adding a season pass and early Online content), and Ultimate (~$150 — multiple retailers have internally listed $149.99).",
+    },
+    {
+      q: "Should I pre-order GTA 6 or wait?",
+      a: "The analysis suggests pre-ordering the standard edition (the deluxe extras aren't worth the +$30), or waiting roughly six months for Take-Two's typical holiday sale that tends to drop the price to $59-69.",
+    },
+  ],
 };

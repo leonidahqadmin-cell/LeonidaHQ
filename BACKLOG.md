@@ -67,7 +67,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
 - ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
 - ✅ Per-article dynamic OG cards via next/og ImageResponse — branded title card per article, auto-wired to og:image + twitter:image; verified PNG render (ea6e72d)
-- ✅ FAQ schema now on 14 articles (added two-cities-online, launch-day-economy, trailer-3-scorecard, second-city-evidence, billion-dollar-map) (a03abe8, c0c9fc7). ~15 remain for a slow drip.
+- ✅ FAQ schema now on 16 articles (latest: state-of-play-reality-check, real-leonida-locations) (823fa6f). ~13 remain for a slow drip.
 - ⚠️ CORRECTION: `vice-city-2026-vs-1986` is NOT stale — the article file is `06-vice-city-2026-vs-1986.md` (numeric filename prefix; frontmatter slug is correct). LESSON: some article files have NN- numeric prefixes, so a Read by slug-name fails even though the article exists — always grep the frontmatter `slug:` to confirm existence, don't trust filename==slug.
 
 ## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)

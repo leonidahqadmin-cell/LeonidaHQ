@@ -29,7 +29,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ viewport meta + themeColor
 - ✅ Removed the fake "SUMMER 2026 / pre-order" poster slop — it was `inland-city-dusk.jpg` (MISNAMED; `summer-marketing-hype.jpg` is actually a CLEAN dusk skyline). Killed every ref: leaks + surveillance covers, a map POI evidence image, the "hidden" POI fallback, homepage Neon Collectible hotspot. Diversified Predictions covers. Verified 390px (795cabd)
   - ⚠️ LESSON: image filenames here LIE — never swap covers by filename, always READ the image first (one Read per file; batch Reads can mis-order)
-- 🔜 Unify ad-hoc buttons onto `.btn-*` (about, not-found, map, follow-sidebar, email-capture)
+- ✅ Unified the full-size CTAs onto `.btn-*` — not-found (Back to HQ / Latest Intel) + about (Read the Reports) now use .btn-primary/.btn-secondary; verified /about + 404 (d62b2d3)
+- 🔜 Follow-up: add `.btn-sm` (compact px-4 py-2) + `.btn-primary-outline` (pink outline) variants, then unify follow-sidebar's "Follow on X" + email-capture form buttons onto them (left as-is to avoid changing their size/color)
 - ✅ Low-contrast text → white/65 (WCAG AA) — bumped 14 faint labels/meta across map-view, article header, homepage stats; verified 390px (9ff7377)
 - 🔜 Orbitron: apply to headings OR drop the unused font import
 - 💡 Prune dead/no-op CSS (glow/cyber/holo classes); proper favicon (currently a 700KB PNG)
@@ -51,6 +52,15 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
 - ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
 - 💡 Templated per-article OG cards (title overlay) via ImageResponse; FAQ schema on more pages
+
+## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)
+- 🔜 **Keyword-target the high-volume pages:** make the /map page + a /countdown page rank for "gta 6 map" / "gta 6 release date" / "gta 6 countdown" (real search queries). Tune <title>/h1/meta/slug to match what people actually type; add intro copy + FAQ. These two searches dwarf everything.
+- 🔜 **Google News sitemap** (`/news-sitemap.xml`, last-48h articles) + publisher metadata, so GTA6 news spikes send organic waves (how IGN/GameRant pull millions). Then user submits site to Google News/Publisher Center.
+- 🔜 **Embeddable countdown widget** (`/embed/countdown` iframe + copy-embed snippet) — a linkable "days until GTA 6" other sites/Discords paste = backlinks + referral traffic. Map = same play (shareable deep-links).
+- 🔜 **FAQ schema (JSON-LD)** on the big evergreen articles (file-size, release-date, beta-scam) to win rich results / "People also ask" real estate.
+- 🔜 **Core Web Vitals pass** (LCP/CLS/INP) — ranking factor; measure with Lighthouse, fix the worst offender.
+- 💡 Internal-linking pass (every article links the map + 2 related posts — spreads ranking authority); evergreen "GTA 6 release date" hub page that updates as the date nears.
+- 💡 YouTube Shorts/TikTok cut from the map/evidence (short-form, not Twitter/Reddit) → link in bio. Owned email list = the audience the algorithm can't take.
 
 ## 🧹 INFRA / PERF / HYGIENE
 - ✅ Build clean (33 routes); committed + pushed; merge-typo caught & fixed
@@ -74,6 +84,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - Test mobile at 390px after every visual change
 - Refresh DROP-KIT daily; log what lands in LEARNINGS
 - Add every new bug/idea here the instant it's found
+- **X draft-assist:** whenever a NEW article ships/migrates, append a paste-ready clickbait hook (Claude writes it free — NOT the bot's API) to `C:\Users\Nicholas\leonidahq-x-bot\drafts.md`. Auto-posting is shelved (X API ~$100/mo); user posts manually from that file.
 - Verify before/after — never ship a fix blind
 - Keep the deploy green
 

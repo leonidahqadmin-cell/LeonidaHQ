@@ -23,6 +23,7 @@ export function SiteFooter() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-2 font-heading uppercase tracking-widest text-xs">
             <Link href="/articles" className="text-foreground/80 hover:text-secondary transition">Reports</Link>
             <Link href="/map" className="text-foreground/80 hover:text-secondary transition">Map</Link>
+            <Link href="/countdown" className="text-foreground/80 hover:text-secondary transition">Countdown</Link>
             <Link href="/about" className="text-foreground/80 hover:text-secondary transition">About</Link>
             <Link href="/privacy" className="text-foreground/80 hover:text-secondary transition">Privacy</Link>
             <Link href="/terms" className="text-foreground/80 hover:text-secondary transition">Terms</Link>

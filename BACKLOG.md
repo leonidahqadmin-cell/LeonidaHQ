@@ -91,7 +91,12 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 💡 GitHub repo was renamed (push warns "repository moved" → leonidahqadmin-cell/LeonidaHQ.git); update remote: `git remote set-url origin https://github.com/leonidahqadmin-cell/LeonidaHQ.git` to drop the redirect
 
 ## 🧹 ASSET HYGIENE
-- ✅ Deleted 6 unreferenced images (~12.7MB) from public/img — skyline-rain/grid-4-panel/beach-sunset/banner-wide/couple-silhouette/inland-city-dusk; public/img 27.4MB→14.7MB (32f495a). Remaining big unused-at-runtime files: favicon-source.png (704KB, kept as icon master), logo-circle.png (2.1MB, 1 ref — verify it's actually rendered), ps5-window.png (1.8MB, 1 ref).
+- ✅ Deleted 6 unreferenced images (~12.7MB) from public/img — skyline-rain/grid-4-panel/beach-sunset/banner-wide/couple-silhouette/inland-city-dusk (32f495a)
+- ✅ Fixed `ps5-window.png` = it was a BRAND-GUIDELINES sheet wrongly used as the $90-article + business-category hero → swapped to clean skylines, deleted the orphan (-1.8MB); downscaled logo-circle.png 2.1MB→442KB (512px, JSON-LD logo) (a62a683). public/img now ~12.5MB. Only big file left: favicon-source.png (704KB, kept as icon master — could relocate out of public).
+
+## 🖼️ COVER AUDIT (complete — all 8 read & verified)
+- ✅ Read every distinct cover image in article-images.ts. CLEAN: vice-city-neon-hero, article-two-cities, summer-marketing-hype (LEONIDA STATE LINE dusk skyline), leonida-map-preview (neon map), map-illustration (map artwork). INTENTIONAL designed graphics (text-heavy but on-brand, correct @viraltbf, on-theme — acceptable, NOT slop): article-lucia-jason (Lucia&Jason magazine cover), evidence-journey-map (evidence map), leonidahq-social-card (brand card). The two real slop covers (inland-city-dusk SUMMER poster, ps5-window brand sheet) were already removed. NO remaining slop.
+- 💡 Minor: lucia-jason + social-card show "2025" text (dated vs 2026) — only matters if regenerating; cosmetic. Could also swap the 3 text-heavy graphics to clean skylines if a uniform look is wanted (stylistic choice, not a bug).
 
 ## ⚠️ ROOT CAUSES / RISKS
 - 🔜 Find the Ghost husk auto-publisher (a Make/Zapier scenario) and set it to draft — the guard only band-aids it

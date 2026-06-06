@@ -46,7 +46,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 **The #1 gotcha — fictional geography:** the lat/lng are real Miami but only used to position pins on the ARTWORK. A real maplibre/leaflet map with real-world tiles would place pins on actual Miami = WRONG (Leonida/Vice City is fictional). A real map MUST use the Leonida artwork as the basemap (image/raster layer), NOT geographic tiles. Leaflet + `L.CRS.Simple` + `L.imageOverlay` is the standard "game/fantasy map" pattern and is far lighter (~40KB) than re-adding maplibre-gl (~230KB, removed in d19cf8b).
 **Risks:** bundle bloat; reworking ~580 lines of map-view.tsx to preserve confidence/cluster/filter/panel/share; SSR (needs dynamic import ssr:false — leaflet/maplibre need `window`); mobile gesture conflict (map pan vs page scroll); the artwork is stylized illustration, not true cartography — deep zoom exposes it as art.
 **Phased plan:**
-- **Phase 0 (cheap, no deps, biggest UX gain):** add drag-to-pan to the current static map — wrap the scaled artwork+pins in a pointer-drag container that translates X/Y when zoomed. Closes the real "can zoom but can't move" gap. ~1 cycle.
+- **Phase 0 ✅ DONE (4bee369):** drag-to-pan shipped — art+overlays+clusters+pins wrapped in one translate+scale container; clamped, pan-resets-on-zoom-out, touch-action scoped, drag-vs-tap guard so panning never opens a pin. Phases 1-3 (Leaflet rework) remain deferred.
 - **Phase 1:** Leaflet + CRS.Simple + imageOverlay of the artwork; pins → Leaflet markers from existing coords; dynamic import ssr:false; reimplement the click→panel.
 - **Phase 2:** leaflet.markercluster for real clustering (replaces fake badges); filters as layer toggles.
 - **Phase 3:** pin search, deep-link `/map#pin-id`, share.

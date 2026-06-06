@@ -96,4 +96,46 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "The November 19, 2026 date is firm and tied to Take-Two's financial guidance — a much stronger anchor than the early marketing window ever was.",
     },
   ],
+  "gta-6-table-tennis-rage-origin": [
+    {
+      q: "What game engine does GTA 6 use?",
+      a: "GTA 6 runs on RAGE — the Rockstar Advanced Game Engine — the in-house technology that has also powered GTA IV, Red Dead Redemption, GTA V and Red Dead Redemption 2.",
+    },
+    {
+      q: "What was the first RAGE engine game?",
+      a: "Rockstar Games presents Table Tennis (2006) was the first title built on RAGE. Rockstar used the small project to test and prove the engine that would later run its biggest games.",
+    },
+    {
+      q: "Why did Rockstar make a table tennis game?",
+      a: "It was never really about ping-pong. Table Tennis was a low-risk way to harden the new RAGE engine — the foundation Rockstar has refined for nearly two decades.",
+    },
+  ],
+  "why-we-waited-13-years-for-gta-6": [
+    {
+      q: "Why did GTA 6 take so long?",
+      a: "Three reasons: GTA 5 and GTA Online kept generating billions for a decade (no pressure to rush), Rockstar poured years into Red Dead Redemption 2, and each new game's scale keeps growing.",
+    },
+    {
+      q: "How long has it been since GTA 5?",
+      a: "GTA 6 launches November 19, 2026 — more than 13 years after GTA 5's September 2013 release, the longest gap between mainline entries in series history.",
+    },
+    {
+      q: "Is GTA 6 the most expensive game ever made?",
+      a: "It has been widely reported as the most expensive game ever made, reflecting the scale of building a detailed, living Leonida to Rockstar's standards.",
+    },
+  ],
+  "rdr2-mechanic": [
+    {
+      q: "What should GTA 6 take from Red Dead Redemption 2?",
+      a: "Its systemic, reactive world — NPCs that remember you, a witness-and-consequence system, and item-level detail — rather than any single standalone feature.",
+    },
+    {
+      q: "Will GTA 6 have RDR2-style mechanics?",
+      a: "Nothing is confirmed, but GTA 6 shares Rockstar's RAGE technology and studio DNA, so fans reasonably expect that level of systemic depth.",
+    },
+    {
+      q: "What made RDR2's world feel alive?",
+      a: "A web of small systems — NPC memory and reactions, witnesses who could report crimes, and persistent detail — not the story alone.",
+    },
+  ],
 };

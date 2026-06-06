@@ -116,6 +116,19 @@ export default function CountdownPage() {
 
       <section className="mt-16">
         <h2 className="font-heading text-2xl font-black uppercase tracking-tight text-secondary">
+          Embed this countdown
+        </h2>
+        <p className="mt-3 max-w-2xl text-foreground/80 leading-relaxed">
+          Add the live GTA 6 countdown to your own site, blog, or Discord page — paste this
+          snippet anywhere HTML is allowed:
+        </p>
+        <pre className="surface mt-4 overflow-x-auto rounded-lg p-4 text-xs leading-relaxed text-foreground/85">
+          <code>{`<iframe src="https://leonidahq.gg/embed/countdown" width="100%" height="170" style="border:0;max-width:560px;border-radius:12px" title="GTA 6 Countdown" loading="lazy"></iframe>`}</code>
+        </pre>
+      </section>
+
+      <section className="mt-16">
+        <h2 className="font-heading text-2xl font-black uppercase tracking-tight text-secondary">
           GTA 6 Release Date FAQ
         </h2>
         <div className="mt-6 space-y-6">

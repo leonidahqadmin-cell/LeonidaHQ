@@ -16,7 +16,7 @@ function calc() {
   };
 }
 
-export function CountdownTimer() {
+export function CountdownTimer({ compact = false }: { compact?: boolean }) {
   // null until mounted to avoid SSR/client hydration mismatch
   const [t, setT] = useState<ReturnType<typeof calc> | null>(null);
 
@@ -33,21 +33,31 @@ export function CountdownTimer() {
     { label: "Seconds", value: t?.seconds, pad: 2 },
   ];
 
+  // compact = always single row (fits an iframe widget); default = roomy, 2x2 on mobile
+  const gridCls = compact ? "grid grid-cols-4 gap-2" : "grid grid-cols-2 gap-3 sm:grid-cols-4";
+  const cellCls = compact ? "px-1 py-3" : "px-2 py-6";
+  const numCls = compact ? "text-2xl sm:text-3xl" : "text-4xl sm:text-5xl";
+  const labelCls = compact ? "text-[9px]" : "text-[10px]";
+
   return (
     <div
-      className="grid grid-cols-2 gap-3 sm:grid-cols-4"
+      className={gridCls}
       role="timer"
       aria-label="Time remaining until GTA 6 releases on November 19, 2026"
     >
       {units.map((u) => (
         <div
           key={u.label}
-          className="surface flex flex-col items-center justify-center rounded-lg px-2 py-6"
+          className={`surface flex flex-col items-center justify-center rounded-lg ${cellCls}`}
         >
-          <span className="font-heading text-4xl font-black tabular-nums text-primary glow-primary sm:text-5xl">
+          <span
+            className={`font-heading font-black tabular-nums text-primary glow-primary ${numCls}`}
+          >
             {u.value === undefined ? "—" : String(u.value).padStart(u.pad, "0")}
           </span>
-          <span className="mt-2 font-heading text-[10px] font-black uppercase tracking-widest text-white/65">
+          <span
+            className={`mt-2 font-heading font-black uppercase tracking-widest text-white/65 ${labelCls}`}
+          >
             {u.label}
           </span>
         </div>

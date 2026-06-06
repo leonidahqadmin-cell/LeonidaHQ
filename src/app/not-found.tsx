@@ -19,13 +19,13 @@ export default function NotFound() {
       <div className="flex flex-wrap gap-3 justify-center">
         <Link
           href="/"
-          className="font-heading uppercase tracking-widest text-xs font-bold bg-primary text-primary-foreground px-5 py-3 rounded hover:opacity-90 transition"
+          className="btn-primary"
         >
           Back to HQ →
         </Link>
         <Link
           href="/articles"
-          className="font-heading uppercase tracking-widest text-xs font-bold border-2 border-secondary text-secondary px-5 py-3 rounded hover:bg-secondary hover:text-secondary-foreground transition"
+          className="btn-secondary"
         >
           Latest Intel
         </Link>

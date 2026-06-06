@@ -100,7 +100,7 @@ export default function AboutPage() {
           <div className="pt-4">
             <Link
               href="/articles"
-              className="inline-flex items-center gap-2 font-heading uppercase tracking-widest text-xs font-bold bg-primary text-primary-foreground px-5 py-3 rounded hover:opacity-90 transition"
+              className="btn-primary gap-2"
             >
               Read the Reports →
             </Link>

@@ -19,7 +19,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Map page mobile layout (was crammed + overlapping the footer)
 - ✅ Map detail panel → closable bottom sheet (was off-screen + un-closeable)
 - ✅ Mobile menu → full-screen opaque via portal (was trapped in the header / see-through)
-- 🔜 Bigger map-marker tap targets for touch
+- ✅ Bigger map-marker tap targets — 36px pins now in centered 44px hit zones; all 25 measured 44×44px via Playwright (32210a8)
 - 💡 Bottom-sheet drag handle + swipe-to-close
 - ♻️ Re-test every page at 390px after each change (headless Chromium)
 

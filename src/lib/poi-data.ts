@@ -86,7 +86,7 @@ export const LEONIDA_POIS: POI[] = [
     evidenceType: "Brand sighting",
     relatedArticle: "launch-day-economy",
     lastUpdated: "2026-06-03",
-    evidenceImage: "/img/social-card-premium.jpg",
+    evidenceImage: "/img/article-two-cities.jpg",
   },
   {
     id: "poi-5",

@@ -75,7 +75,7 @@ function getConfidenceScore(confidence: Confidence) {
 
 function getEvidenceImage(poi: POI) {
   if (poi.evidenceImage) return poi.evidenceImage;
-  if (poi.category === "business") return "/img/social-card-premium.jpg";
+  if (poi.category === "business") return "/img/vice-city-neon-hero.jpg";
   if (poi.category === "collectible") return "/img/evidence-journey-map.jpg";
   if (poi.category === "hidden") return "/img/summer-marketing-hype.jpg";
   return "/img/leonida-map-preview.jpg";

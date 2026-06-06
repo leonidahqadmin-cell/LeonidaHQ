@@ -13,7 +13,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Deploy the Next.js site to Vercel
 - ✅ **Point leonidahq.gg DNS → Vercel** — LIVE (apex A → 76.76.21.21, www → cname.vercel-dns.com via Namecheap; serving Next.js, confirmed 2026-06-05)
 - ✅ **Resend live** — domain verified, RESEND_API_KEY in Vercel Production; live POST to /api/subscribe returned `sent:true` (verified 2026-06-05)
-- 🔜 Decide Ghost's fate: migrate its 40 articles + countdown (still at leonidahq.ghost.io), or leave them
+- ✅ Ghost migration COMPLETE — all unique articles ported to the Next.js site (29 articles total) + /countdown rebuilt natively. Final 4: no-third-delay, originally-2025, review-copies, rdr2-mechanic (67d30df). Ghost can be retired.
 
 ## 📱 MOBILE / UX
 - ✅ Map page mobile layout (was crammed + overlapping the footer)

@@ -54,7 +54,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 💡 Templated per-article OG cards (title overlay) via ImageResponse; FAQ schema on more pages
 
 ## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)
-- 🔜 **Keyword-target the high-volume pages:** make the /map page + a /countdown page rank for "gta 6 map" / "gta 6 release date" / "gta 6 countdown" (real search queries). Tune <title>/h1/meta/slug to match what people actually type; add intro copy + FAQ. These two searches dwarf everything.
+- ✅ Built **/countdown** — live ticking countdown to Nov 19 2026, keyword-targeted title/meta/h1/canonical for "gta 6 countdown / release date", FAQPage JSON-LD, internal links, sitemap (0.9) + footer nav, X hook queued (e957e3b)
+- 🔜 **Keyword-target the /map page** <title>/h1/meta for "gta 6 map" (the page metadata is currently generic — make it match the search)
 - 🔜 **Google News sitemap** (`/news-sitemap.xml`, last-48h articles) + publisher metadata, so GTA6 news spikes send organic waves (how IGN/GameRant pull millions). Then user submits site to Google News/Publisher Center.
 - 🔜 **Embeddable countdown widget** (`/embed/countdown` iframe + copy-embed snippet) — a linkable "days until GTA 6" other sites/Discords paste = backlinks + referral traffic. Map = same play (shareable deep-links).
 - 🔜 **FAQ schema (JSON-LD)** on the big evergreen articles (file-size, release-date, beta-scam) to win rich results / "People also ask" real estate.

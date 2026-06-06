@@ -3,9 +3,34 @@ import { MotionToggle } from "@/components/motion-toggle";
 import { LEONIDA_POIS, LAST_UPDATED } from "@/lib/poi-data";
 
 export const metadata = {
-  title: "Leonida Map",
+  title: "GTA 6 Map — Interactive Leonida Map of Every Location & Leak",
   description:
-    "The public Leonida map tracker. 25+ GTA 6 locations with source notes, confidence labels, filters, and evidence-first map intel.",
+    "Explore the interactive GTA 6 map of Leonida — 25+ confirmed and theorized locations from trailers and leaks, each with a confidence rating and source notes. The evidence-first Grand Theft Auto VI map tracker.",
+  keywords: [
+    "gta 6 map",
+    "gta 6 leonida map",
+    "gta 6 map leak",
+    "grand theft auto 6 map",
+    "gta vi map",
+    "vice city map gta 6",
+    "interactive gta 6 map",
+  ],
+  alternates: { canonical: "https://leonidahq.gg/map" },
+  openGraph: {
+    title: "GTA 6 Map — Interactive Leonida Map",
+    description:
+      "25+ confirmed and theorized GTA 6 locations across Leonida, with confidence ratings and source notes.",
+    url: "https://leonidahq.gg/map",
+    type: "website",
+    images: ["/img/leonida-map-preview.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GTA 6 Map — Interactive Leonida Map",
+    description:
+      "25+ confirmed and theorized GTA 6 locations across Leonida, with confidence ratings and source notes.",
+    images: ["/img/leonida-map-preview.jpg"],
+  },
 };
 
 export default function MapPage() {

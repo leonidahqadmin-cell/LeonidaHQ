@@ -138,4 +138,46 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "A web of small systems — NPC memory and reactions, witnesses who could report crimes, and persistent detail — not the story alone.",
     },
   ],
+  "two-cities-online": [
+    {
+      q: "Will GTA 6 have a second city besides Vice City?",
+      a: "Map evidence points to Leonida having two major metros — Vice City plus an inland city — and everything in between, a much larger scale than GTA V's single Los Santos.",
+    },
+    {
+      q: "How does 'two cities' change GTA Online?",
+      a: "It unlocks territory and rival-crew systems that differ by metro, economy loops that span the whole state (smuggle from the inland city, launder in Vice City), and separate seasonal events per city — well beyond GTA V's drip-fed islands.",
+    },
+    {
+      q: "What's the risk of a two-city GTA Online?",
+      a: "Maintaining two living cities at GTA 6 quality is very expensive. If Rockstar under-invests in one side after launch, the 'two cities' promise could end up feeling like marketing.",
+    },
+  ],
+  "launch-day-economy": [
+    {
+      q: "How will GTA 6 make back its budget?",
+      a: "Primarily through GTA Online — buyable franchises, smuggling routes between the cities, gambling and entertainment venues, and player-run criminal empires form a self-sustaining economy that doesn't need constant new map drops.",
+    },
+    {
+      q: "Why do the businesses on the map matter?",
+      a: "Each business, fence, and heist-prep location is a revenue node — together they're the skeleton of a player-driven economy designed to run for years.",
+    },
+    {
+      q: "How long could GTA 6 Online last?",
+      a: "GTA V's online mode is still profitable 12+ years after launch. Leonida is built to do the same at an estimated 2-3x the scale.",
+    },
+  ],
+  "trailer-3-scorecard": [
+    {
+      q: "When is GTA 6 Trailer 3?",
+      a: "Rockstar has not confirmed a Trailer 3 date or format. Any specific date circulating now is rumor until Rockstar says otherwise.",
+    },
+    {
+      q: "What should GTA 6 Trailer 3 show?",
+      a: "Ideally a clearer Lucia and Jason story hook, a better look at the second city / inland map, and a few seconds of gameplay-readable footage — driving, crowds, interiors, police, or traversal.",
+    },
+    {
+      q: "What will Rockstar hold back until launch?",
+      a: "Likely the full GTA Online reveal, the exact economy structure, major story spoilers, deep mission walkthroughs, and the full map — those are launch-window weapons.",
+    },
+  ],
 };

@@ -51,7 +51,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 🔜 Standardize the know/think/rumor/source structure on articles that lack it
 - 🔜 Add real source links (bodies currently only cite @viraltbf)
 - 🔜 Surface orphaned categories (Characters / Lore / Business) in nav; single-source the taxonomy
-- 💡 Real author bylines (all say "LeonidaHQ Desk"); new evergreen guides
+- ✅ Bylines vary by category (News/Intel/Forecast/Leaks/Map/Lore/Online/Business/Field Desk) via read-time map in articles.ts (31d3ac0)
+- 💡 New evergreen guides; real per-author identities later if desired
 
 ## 🔎 SEO / SOCIAL
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD

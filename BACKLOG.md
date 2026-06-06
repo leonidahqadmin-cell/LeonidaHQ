@@ -90,6 +90,9 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 💡 Core Web Vitals pass (Lighthouse, fix worst offender)
 - 💡 GitHub repo was renamed (push warns "repository moved" → leonidahqadmin-cell/LeonidaHQ.git); update remote: `git remote set-url origin https://github.com/leonidahqadmin-cell/LeonidaHQ.git` to drop the redirect
 
+## 🧹 ASSET HYGIENE
+- ✅ Deleted 6 unreferenced images (~12.7MB) from public/img — skyline-rain/grid-4-panel/beach-sunset/banner-wide/couple-silhouette/inland-city-dusk; public/img 27.4MB→14.7MB (32f495a). Remaining big unused-at-runtime files: favicon-source.png (704KB, kept as icon master), logo-circle.png (2.1MB, 1 ref — verify it's actually rendered), ps5-window.png (1.8MB, 1 ref).
+
 ## ⚠️ ROOT CAUSES / RISKS
 - 🔜 Find the Ghost husk auto-publisher (a Make/Zapier scenario) and set it to draft — the guard only band-aids it
 - 💡 Kill the multi-tool sprawl (Codex/Grok/Claude all editing) — pick ONE builder to avoid the ~80-versions problem

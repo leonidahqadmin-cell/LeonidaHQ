@@ -23,7 +23,7 @@ const SLUG_IMAGES: Record<string, string> = {
   "trailer-3-predictions": "/img/vice-city-neon-hero.jpg",
   "20-days-to-marketing": "/img/article-two-cities.jpg",
   "discord-gta6-channel-signals": "/img/vice-city-neon-hero.jpg",
-  "the-90-dollar-question": "/img/ps5-window.png",
+  "the-90-dollar-question": "/img/vice-city-neon-hero.jpg",
   "threat-assessment-online-migration": "/img/evidence-journey-map.jpg",
   "vice-city-2026-vs-1986": "/img/vice-city-neon-hero.jpg",
   "bureau-position-the-1986-mistake": "/img/vice-city-neon-hero.jpg",
@@ -39,7 +39,7 @@ const CATEGORY_IMAGES: Record<string, string> = {
   map: "/img/leonida-map-preview.jpg",
   online: "/img/evidence-journey-map.jpg",
   lore: "/img/vice-city-neon-hero.jpg",
-  business: "/img/ps5-window.png",
+  business: "/img/article-two-cities.jpg",
   "field report": "/img/article-two-cities.jpg",
 };
 

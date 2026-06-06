@@ -55,7 +55,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 ## 🔎 SEO / SOCIAL
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
 - ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
-- 💡 Templated per-article OG cards (title overlay) via ImageResponse; FAQ schema on more pages
+- ✅ Per-article dynamic OG cards via next/og ImageResponse — branded title card per article, auto-wired to og:image + twitter:image; verified PNG render (ea6e72d)
+- 💡 FAQ schema on more pages (extend src/lib/article-faq.ts with more slugs)
 
 ## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)
 - ✅ Built **/countdown** — live ticking countdown to Nov 19 2026, keyword-targeted title/meta/h1/canonical for "gta 6 countdown / release date", FAQPage JSON-LD, internal links, sitemap (0.9) + footer nav, X hook queued (e957e3b)

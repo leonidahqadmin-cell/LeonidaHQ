@@ -75,7 +75,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Removed dead deps (three / @react-three / maplibre / react-map-gl, 7 total) + orphaned 3D components — 1,365 lockfile lines gone (d19cf8b)
 - 🔜 Replace boilerplate README with a real runbook (dev :3001, env vars, deploy/DNS/Resend steps)
   - Env vars (Vercel Production): `RESEND_API_KEY` (required, signup emails) · `SUBSCRIBE_NOTIFY_TO` (optional, emails you per new signup — set to davisn2015@gmail.com) · `SUBSCRIBE_NOTIFY_TO` changes need a redeploy to take effect
-- 💡 Security headers in next.config; Core Web Vitals pass
+- ✅ Security headers in next.config (nosniff, referrer-policy, dns-prefetch site-wide; X-Frame-Options SAMEORIGIN + CSP frame-ancestors 'self' on all routes except /embed which stays frame-ancestors * for embedding) — curl-verified (9f928ed)
+- 💡 Core Web Vitals pass (Lighthouse, fix worst offender)
 - 💡 GitHub repo was renamed (push warns "repository moved" → leonidahqadmin-cell/LeonidaHQ.git); update remote: `git remote set-url origin https://github.com/leonidahqadmin-cell/LeonidaHQ.git` to drop the redirect
 
 ## ⚠️ ROOT CAUSES / RISKS

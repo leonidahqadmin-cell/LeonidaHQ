@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   description:
     "Track GTA 6 Leonida map evidence, trailer clues, character theories, and Rockstar news from @viraltbf. Fan intelligence hub.",
   metadataBase: new URL("https://leonidahq.gg"),
-  icons: { icon: "/img/favicon-source.png" },
   alternates: {
     types: { "application/rss+xml": "https://leonidahq.gg/rss.xml" },
   },

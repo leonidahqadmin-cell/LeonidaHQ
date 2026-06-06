@@ -67,7 +67,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
 - ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
 - ✅ Per-article dynamic OG cards via next/og ImageResponse — branded title card per article, auto-wired to og:image + twitter:image; verified PNG render (ea6e72d)
-- ✅ FAQ schema extended to 6 articles total (added no-third-delay, review-copies, originally-2025 — release-date cluster) (42adfa4). Can extend further to table-tennis/why-we-waited/rdr2-mechanic anytime.
+- ✅ FAQ schema now on 9 articles (added table-tennis, why-we-waited, rdr2-mechanic) (f67e588). Remaining 20 articles could get FAQs over time as a slow drip.
 
 ## 🔍 ORGANIC TRAFFIC (get people here WITHOUT social — the compounding channel)
 - ✅ Built **/countdown** — live ticking countdown to Nov 19 2026, keyword-targeted title/meta/h1/canonical for "gta 6 countdown / release date", FAQPage JSON-LD, internal links, sitemap (0.9) + footer nav, X hook queued (e957e3b)

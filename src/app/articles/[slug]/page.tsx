@@ -74,7 +74,8 @@ export async function generateMetadata({ params }: { params: Params }) {
   const { slug } = await params;
   const a = getArticleBySlug(slug);
   if (!a) return {};
-  const image = getArticleImage(a.slug, a.category);
+  // Note: og/twitter images intentionally omitted here so Next uses the
+  // dynamic branded card from opengraph-image.tsx (title + LeonidaHQ wordmark).
   return {
     title: a.title,
     description: a.excerpt,
@@ -82,13 +83,11 @@ export async function generateMetadata({ params }: { params: Params }) {
       title: a.title,
       description: a.excerpt,
       type: "article",
-      images: [image],
     },
     twitter: {
       card: "summary_large_image",
       title: `${a.title} - LeonidaHQ`,
       description: a.excerpt,
-      images: [image],
     },
   };
 }

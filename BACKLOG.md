@@ -37,8 +37,9 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 
 ## 🗺️ THE MAP (crown feature / the moat)
 - ✅ Confidence system, deep detail panel, source notes, share-to-X, derived "last updated"
-- 🔜 Add genuinely **Confirmed** pins (0 of 25 use the top tier — legend's top is dead)
-- 🔜 Set `lastUpdated` on all 25 pins (only 5 set)
+- ✅ Populated the **Confirmed/Official** tier — 2 pins (Vice Beach coast + Leonida swamp) promoted because Rockstar SHOWS those environments in official trailers; reworded so "Confirmed" = location shown, not gameplay (no rumor mislabeled). Legend top no longer dead (4aff26a)
+- ✅ Stamped `lastUpdated` on all 25 pins (was 5); derived header now honest (4aff26a)
+- 👀 Watch: cluster badge "Trailer" count looked like 11 in a dev screenshot vs expected 9 (2 promoted to Confirmed) — likely a stale-render artifact; confirm on live map after deploy.
 - 💡 Real interactive map (maplibre + GeoJSON) instead of the static JPG — big lift, real moat
 - 💡 Pin search, deep-link `/map#pin`, real proximity clustering
 

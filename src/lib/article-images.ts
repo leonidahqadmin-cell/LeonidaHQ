@@ -5,6 +5,7 @@ const SLUG_IMAGES: Record<string, string> = {
   "how-big-will-gta-6-be-file-size": "/img/article-two-cities.jpg",
   "could-gta-6-get-a-subscription-model": "/img/social-card-premium.jpg",
   "rockstar-workers-organizing": "/img/vice-city-neon-hero.jpg",
+  "no-third-delay": "/img/article-two-cities.jpg",
   "asset-profile-caminos-duclos": "/img/article-lucia-jason.jpg",
   "lucia-jason-deep-dive": "/img/article-lucia-jason.jpg",
   "two-cities-online": "/img/article-two-cities.jpg",

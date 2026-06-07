@@ -9,6 +9,7 @@ const SLUG_IMAGES: Record<string, string> = {
   "originally-2025": "/img/vice-city-neon-hero.jpg",
   "review-copies": "/img/article-two-cities.jpg",
   "rdr2-mechanic": "/img/vice-city-neon-hero.jpg",
+  "gta-6-pc-release": "/img/article-two-cities.jpg",
   "asset-profile-caminos-duclos": "/img/article-lucia-jason.jpg",
   "lucia-jason-deep-dive": "/img/article-lucia-jason.jpg",
   "two-cities-online": "/img/article-two-cities.jpg",

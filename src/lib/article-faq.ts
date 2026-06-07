@@ -416,6 +416,20 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "Best estimate is about 60% it's fully implemented (held as a launch-day reveal), 30% partially playable, and 10% cut for performance. The two cities are connected by a four-lane interior highway with intermediate towns along the corridor.",
     },
   ],
+  "gta-6-pc-release": [
+    {
+      q: "Is GTA 6 coming to PC?",
+      a: "Almost certainly — but not at launch. GTA 6 is confirmed for PlayStation 5 and Xbox Series X|S on November 19, 2026, with no announced PC version yet. Based on Rockstar's history, a PC release is expected to follow later.",
+    },
+    {
+      q: "When will GTA 6 release on PC?",
+      a: "There's no official date, but Rockstar's pattern suggests 6-18 months after the console launch — roughly the second half of 2027 into early 2028. GTA V's PC version came ~18 months after console; Red Dead Redemption 2's came ~13 months after.",
+    },
+    {
+      q: "Will the GTA 6 PC version be better?",
+      a: "Historically yes. Rockstar's PC ports tend to be the definitive version — higher frame rates, resolution options, and eventually mod support — which is part of why many PC players choose to wait.",
+    },
+  ],
   "surveillance-note-external-source-silences": [
     {
       q: "What GTA 6 features is Rockstar staying silent on?",

@@ -110,6 +110,9 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 🔜 **GATE 0:** land ONE post that breaks out (>20 reposts or >50 follows) = proof it compounds
 - 💡 Build the owned email list (the asset the algorithm can't take)
 
+## 🩺 HEALTH LOG
+- ✅ Health check: all key routes 200 live (/, /map, /countdown, /articles, sitemap.xml, news-sitemap.xml, robots.txt, /embed/countdown, articles + OG-image route); apex serves direct 200, www→apex redirect. Site verified healthy. **The build is DONE — engine is in maintenance mode; next chapter is growth (user: post X drafts, watch GSC/Bing traffic land).**
+
 ## ♻️ ALWAYS-ON (the "infinite" engine)
 - Test mobile at 390px after every visual change
 - Refresh DROP-KIT daily; log what lands in LEARNINGS

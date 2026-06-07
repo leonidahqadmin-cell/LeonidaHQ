@@ -402,4 +402,36 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "It's especially visible roughly six months before the biggest launch in gaming history — a reminder that thousands of developers working under real pressure are behind the trailers and hype.",
     },
   ],
+  "internal-memo-inland-settlement": [
+    {
+      q: "Does GTA 6 have a second city?",
+      a: "The evidence is strong: Trailer 2 flyover footage shows a metropolitan area roughly 140 miles north-northwest of Vice City, with a footprint consistent with 400,000-600,000 residents. Rockstar hasn't officially confirmed it yet.",
+    },
+    {
+      q: "What is the GTA 6 inland city called?",
+      a: "Unconfirmed. Two foreign press leaks have mentioned 'Roxwood,' but it's uncorroborated — treat the name as a rumor until Rockstar says it officially.",
+    },
+    {
+      q: "Is the GTA 6 second city fully playable?",
+      a: "Best estimate is about 60% it's fully implemented (held as a launch-day reveal), 30% partially playable, and 10% cut for performance. The two cities are connected by a four-lane interior highway with intermediate towns along the corridor.",
+    },
+  ],
+  "surveillance-note-external-source-silences": [
+    {
+      q: "What GTA 6 features is Rockstar staying silent on?",
+      a: "Five big ones: AI-driven NPC memory, GTA Online migration, single-player DLC, modding policy, and the price. With Rockstar, refusing to talk about a feature usually means they're still deciding — the silence itself is a data point.",
+    },
+    {
+      q: "Will GTA 6 have full dynamic AI NPCs?",
+      a: "Likely only partial. Rockstar's public patents suggest story NPCs will remember player actions, but random pedestrians won't. Don't expect full 'Westworld-style' dynamic NPCs across the whole map.",
+    },
+    {
+      q: "Will GTA 6 get single-player DLC?",
+      a: "Probably not. GTA 5 received zero single-player DLC across 13 years, and Rockstar hasn't said GTA 6 will differ. If they announce single-player DLC later, it can be read as a sign that sales underperformed.",
+    },
+    {
+      q: "What is Rockstar's GTA 6 modding stance?",
+      a: "Expected to be 'containment, not embrace' following the FiveM acquisition — official tools on a tight leash, with cosmetic and roleplay mods allowed but anything competing with the Online economy banned.",
+    },
+  ],
 };

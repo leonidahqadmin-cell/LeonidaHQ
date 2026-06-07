@@ -67,7 +67,7 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - ✅ Strong metadata, OG/Twitter cards, sitemap, robots, RSS, per-article JSON-LD
 - ✅ Added `twitter:site` = @viraltbf (X attributes shared cards to the account) — 9d213e8
 - ✅ Per-article dynamic OG cards via next/og ImageResponse — branded title card per article, auto-wired to og:image + twitter:image; verified PNG render (ea6e72d)
-- ✅ FAQ schema now on 24 articles (latest: bureau-position-the-1986-mistake, asset-profile-caminos-duclos) (061f619). 5 remain: internal-memo-inland-settlement, summer-asset-drop, surveillance-note-external-source-silences, vice-city-2026-vs-1986 (06-), + 1 other (check faq.ts keys vs ls).
+- ✅✅ FAQ schema COMPLETE — ALL 29/29 articles now emit FAQPage JSON-LD (rich-result eligible). Workstream DONE.
 - ✅ INDEXING: Google Search Console verified + both sitemaps submitted; **Bing Webmaster verified** (msvalidate.01 meta tag, 2d0f183) + sitemap submitted. Site now indexing on Google + Bing/DuckDuckGo. User still optionally doing: Google News Publisher Center + GSC Request-Indexing.
 - ⚠️ CORRECTION: `vice-city-2026-vs-1986` is NOT stale — the article file is `06-vice-city-2026-vs-1986.md` (numeric filename prefix; frontmatter slug is correct). LESSON: some article files have NN- numeric prefixes, so a Read by slug-name fails even though the article exists — always grep the frontmatter `slug:` to confirm existence, don't trust filename==slug.
 

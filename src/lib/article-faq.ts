@@ -360,4 +360,46 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "Rockstar frames it as a Bonnie-and-Clyde romance, but it isn't confirmed — it could be romantic or transactional. A good signal to watch in Trailer 3 is whether the two ever argue, which is the test of real character writing.",
     },
   ],
+  "vice-city-2026-vs-1986": [
+    {
+      q: "How is Vice City different in GTA 6 versus the 1986 version?",
+      a: "The neon aesthetic carries over, but the mechanism changed completely: the 1986 cocaine economy is replaced by pharmaceuticals, mortgage fraud, and crypto laundering; the same Ocean Drive blocks are now multimillion-dollar condos; and policing went from outgunned cops to plate readers, drones, and facial recognition.",
+    },
+    {
+      q: "Will GTA 6 have new police and surveillance mechanics?",
+      a: "Likely. The 2026 VCPD is described with real-time facial recognition, license-plate readers, and drones — so a clean getaway means defeating surveillance, not just outrunning a patrol car. Expect a stealth/disguise mechanic that earlier games lacked.",
+    },
+    {
+      q: "What stays the same in Vice City?",
+      a: "Three things carry over untouched: pastel hotels at sunset, the neon palm-tree silhouette, and the feeling that everyone you meet is running a scam.",
+    },
+  ],
+  "summer-asset-drop": [
+    {
+      q: "What will GTA 6's first marketing assets show?",
+      a: "The first coordinated wave will most likely lead with polished, shareable pieces before deep gameplay — key art, store/pre-order page movement, short world footage (crowds, traffic, weather, interiors), a Lucia and Jason character beat, and a map-adjacent geography tease.",
+    },
+    {
+      q: "When does the GTA 6 summer marketing push start?",
+      a: "Take-Two has pointed to a summer window, but Rockstar hasn't announced the exact next asset date. Exact trailer and pre-order timing remain rumor until officially confirmed.",
+    },
+    {
+      q: "Will the first asset wave include full gameplay?",
+      a: "Probably not first. Rockstar typically leads with polished, shareable assets to 'restart the machine'; a full gameplay showcase isn't guaranteed, and any claim of one should be treated as rumor until official.",
+    },
+  ],
+  "rockstar-workers-organizing": [
+    {
+      q: "Are Rockstar workers unionizing?",
+      a: "Reports describe union-organizing efforts among Rockstar staff, particularly in the UK, alongside claims the studio took disciplinary action against some involved. The specifics remain contested and the situation is still developing.",
+    },
+    {
+      q: "Does the Rockstar labor situation affect GTA 6's release?",
+      a: "There's no indication it changes the confirmed November 19, 2026 date. It's a separate, evolving story about working conditions behind the game rather than a release-schedule signal.",
+    },
+    {
+      q: "Why is the Rockstar union news significant right now?",
+      a: "It's especially visible roughly six months before the biggest launch in gaming history — a reminder that thousands of developers working under real pressure are behind the trailers and hype.",
+    },
+  ],
 };

@@ -328,4 +328,36 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "Likely. The dedicated space probably doubles as a soft launchpad for cross-promoting GTA Online, teasing persistent systems like buyable businesses and the two-city economy built to run for a decade.",
     },
   ],
+  "bureau-position-the-1986-mistake": [
+    {
+      q: "Is GTA 6 just a bigger Vice City?",
+      a: "No. The original Vice City (1986) was a single ~5-square-mile municipality; Leonida (2026) is a whole state with a verified playable interior of 90+ square miles — reportedly larger than San Andreas, Los Santos, and Red Dead 2's maps combined.",
+    },
+    {
+      q: "How many regions are in GTA 6's Leonida?",
+      a: "Five regions are tracked: Vice City, the Vice Keys, Port Gellhorn (an industrial Gulf Coast city), the Inland Wetlands (Everglades), and an unnamed inland city — two full cities for the first time in series history.",
+    },
+    {
+      q: "How big is the GTA 6 map?",
+      a: "The verified playable interior is 90+ square miles, with a roughly 140-mile transit corridor between Vice City and the inland city — far larger than any previous GTA, and built to reward cross-state play.",
+    },
+  ],
+  "asset-profile-caminos-duclos": [
+    {
+      q: "Who is Lucia in GTA 6?",
+      a: "Lucia Caminos — Cuban-American, late 20s, recently released from state prison, GTA's first female protagonist, and a co-lead (not a sidekick) alongside Jason.",
+    },
+    {
+      q: "Is Lucia related to Trevor Philips?",
+      a: "No — there is zero evidence for it. The 'Trevor's daughter' theory came from a single YouTube essay misreading a hat. It is not real; treat it as debunked.",
+    },
+    {
+      q: "Who is Jason in GTA 6?",
+      a: "Jason Duclos — white American, early 30s, with a military bearing (likely ex-Army and combat-deployed), proficient with both small arms and explosives, who operates exclusively in coordination with Lucia.",
+    },
+    {
+      q: "Are Lucia and Jason a couple?",
+      a: "Rockstar frames it as a Bonnie-and-Clyde romance, but it isn't confirmed — it could be romantic or transactional. A good signal to watch in Trailer 3 is whether the two ever argue, which is the test of real character writing.",
+    },
+  ],
 };

@@ -300,4 +300,32 @@ export const ARTICLE_FAQ: Record<string, FaqItem[]> = {
       a: "Rockstar's pattern is one major trailer per year (December 2023, December 2025), so the next logical drop lands in the June-August window — late June is a credible earliest date, but Rockstar hasn't confirmed one.",
     },
   ],
+  "trailer-3-predictions": [
+    {
+      q: "When is GTA 6 Trailer 3 coming out?",
+      a: "Rockstar runs a one-trailer-per-year cadence (Trailer 1 in December 2023, Trailer 2 in December 2025), so Trailer 3 is expected somewhere between July and September 2026. No official date has been announced.",
+    },
+    {
+      q: "What does GTA 6 Trailer 3 need to show?",
+      a: "Five things: a real Lucia backstory beat, Jason speaking more than a few lines, confirmation of the inland second city, at least one start-to-finish gameplay mission, and one major new character (likely the antagonist).",
+    },
+    {
+      q: "Will Trailer 3 reveal GTA 6's price or Online mode?",
+      a: "Unlikely. The price gets its own separate news cycle rather than a trailer, the Online reveal is typically saved for after the single-player launch, and a PC date usually comes 6-12 months later.",
+    },
+  ],
+  "discord-gta6-channel-signals": [
+    {
+      q: "What does Rockstar's GTA 6 Discord move mean?",
+      a: "Rockstar quietly gave the GTA 6 channel its own elevated category on the official Discord — a low-key infrastructure move that typically precedes a content avalanche, lining up with the expected summer marketing push.",
+    },
+    {
+      q: "Is the GTA 6 marketing push starting soon?",
+      a: "The signals point that way: the Discord reorganization plus Take-Two CEO Strauss Zelnick's 'marketing when summer hits' comments suggest the first real wave — Trailer 3, pre-orders, and price clarity — is imminent (late June / early July).",
+    },
+    {
+      q: "Does the Discord move hint at GTA 6 Online?",
+      a: "Likely. The dedicated space probably doubles as a soft launchpad for cross-promoting GTA Online, teasing persistent systems like buyable businesses and the two-city economy built to run for a decade.",
+    },
+  ],
 };

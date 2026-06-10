@@ -1,10 +1,26 @@
 import Link from "next/link";
 import { MotionToggle } from "./motion-toggle";
+import { EmailCapture } from "./email-capture";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-gradient-to-b from-transparent to-primary/5">
       <div className="container mx-auto px-6 py-10 max-w-7xl">
+        {/* Sitewide email capture — every page can capture an email */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-border pb-8 mb-8">
+          <div className="max-w-md">
+            <p className="uppercase tracking-widest text-xs font-bold text-secondary mb-2 flex items-center gap-2">
+              <span>✉</span> Join the List
+            </p>
+            <p className="text-sm text-muted-foreground">
+              The intel Rockstar won&apos;t give you — drop your email, get the drops first.
+            </p>
+          </div>
+          <div className="w-full md:w-80">
+            <EmailCapture variant="compact" />
+          </div>
+        </div>
+
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           <div>
             <p className="font-heading text-2xl font-black tracking-wide">
@@ -25,9 +41,18 @@ export function SiteFooter() {
             <Link href="/map" className="text-foreground/80 hover:text-secondary transition">Map</Link>
             <Link href="/countdown" className="text-foreground/80 hover:text-secondary transition">Countdown</Link>
             <Link href="/about" className="text-foreground/80 hover:text-secondary transition">About</Link>
+            <Link href="/sponsor" className="text-foreground/80 hover:text-secondary transition">Sponsor</Link>
             <Link href="/privacy" className="text-foreground/80 hover:text-secondary transition">Privacy</Link>
             <Link href="/terms" className="text-foreground/80 hover:text-secondary transition">Terms</Link>
             <Link href="/rss.xml" className="text-foreground/80 hover:text-secondary transition">RSS</Link>
+            <Link
+              href="https://leonida-topcrew.deadbeatradar.workers.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/80 hover:text-secondary transition col-span-2 sm:col-span-1"
+            >
+              🏆 Top Crew leaderboard
+            </Link>
             <Link href="https://x.com/viraltbf" target="_blank" className="text-foreground/80 hover:text-secondary transition col-span-2 sm:col-span-1">
               @viraltbf
             </Link>

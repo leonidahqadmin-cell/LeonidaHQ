@@ -108,7 +108,8 @@ _Live deploy: leonida-hq-z2x4.vercel.app · Repo: github.com/leonidahqadmin-cell
 - 🔜 **@viraltbf daily reps** (posts + replies) — the real growth lever, only you can do it
 - 🔜 Short-form video (lead) + Reddit + Twitter, fed by the daily DROP-KIT
 - 🔜 **GATE 0:** land ONE post that breaks out (>20 reposts or >50 follows) = proof it compounds
-- 💡 Build the owned email list (the asset the algorithm can't take)
+- ✅ **Owned-audience rails (2026-06-09, 23bfd4c)** — email capture now SITEWIDE: footer block on every page ("The intel Rockstar won't give you…"), reuses `EmailCapture` compact → the one existing `/api/subscribe` Resend flow (no second pathway). Plus **/sponsor** page (intel hub + tools + leaderboard pitch, audience through Nov 19 2026 launch, no fake stats — "early and growing", mailto hello@leonidahq.gg) in footer nav + sitemap, and 🏆 **Top Crew leaderboard** footer link (leonida-topcrew.deadbeatradar.workers.dev). Build green, 390px shots in review-shots/email-rails-*, live-verified: /, /sponsor, article page all 200 with capture markup. **The metric from now on: emails captured.**
+- 🔜 Wire affiliate links (needs Amazon Associates tag from Nicholas)
 
 ## 🩺 HEALTH LOG
 - ✅ Health check: all key routes 200 live (/, /map, /countdown, /articles, sitemap.xml, news-sitemap.xml, robots.txt, /embed/countdown, articles + OG-image route); apex serves direct 200, www→apex redirect. Site verified healthy. **The build is DONE — engine is in maintenance mode; next chapter is growth (user: post X drafts, watch GSC/Bing traffic land).**

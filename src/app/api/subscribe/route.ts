@@ -1,11 +1,15 @@
 // Email signup endpoint. Wired to Resend.
-// Sends a welcome email to the subscriber + logs the signup.
-// Add SUBSCRIBE_NOTIFY_TO env var later to also notify yourself per signup.
+// Sends a welcome email, saves to Resend Audience, and notifies owner.
+// Env vars needed:
+//   RESEND_API_KEY        — Resend API key (required)
+//   RESEND_AUDIENCE_ID    — Resend Audience ID to save contacts to (required for list)
+//   SUBSCRIBE_NOTIFY_TO   — owner email to notify on each signup (optional)
 
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID ?? "";
 
 const FROM = "LeonidaHQ <hello@leonidahq.gg>";
 const REPLY_TO = "hello@leonidahq.gg";
@@ -74,6 +78,24 @@ export async function POST(req: NextRequest) {
   }
 
   try {
+    // 1. Save to Resend Audience (the list) — this is the durable record
+    if (AUDIENCE_ID) {
+      const { error: contactError } = await resend.contacts.create({
+        audienceId: AUDIENCE_ID,
+        email,
+        unsubscribed: false,
+      });
+      if (contactError) {
+        // Log but don't block — still send the welcome email
+        console.error("[subscribe] contacts.create error:", contactError);
+      } else {
+        console.log(`[subscribe] saved to audience: ${email}`);
+      }
+    } else {
+      console.warn("[subscribe] RESEND_AUDIENCE_ID not set — subscriber not saved to list");
+    }
+
+    // 2. Send welcome email
     const { error } = await resend.emails.send({
       from: FROM,
       to: email,
@@ -83,12 +105,12 @@ export async function POST(req: NextRequest) {
     });
 
     if (error) {
-      console.error("[subscribe] resend error:", error);
-      // Don't fail the signup if email fails — still capture
+      console.error("[subscribe] resend send error:", error);
+      // Don't fail the signup if email fails — contact is already saved
       return NextResponse.json({ ok: true, sent: false, error: error.message });
     }
 
-    // Optional: also notify yourself per signup
+    // 3. Notify owner per signup
     const notifyTo = process.env.SUBSCRIBE_NOTIFY_TO;
     if (notifyTo) {
       await resend.emails.send({

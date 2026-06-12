@@ -64,7 +64,7 @@ export function FollowSidebar() {
         <ul className="space-y-2 text-sm">
           <li>
             <a
-              href="https://www.amazon.com/dp/B0CL61F39H?tag=viraltbf-20"
+              href="https://www.amazon.com/dp/B0CL61F39H?tag=leonidahq-20"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:underline"
@@ -74,7 +74,7 @@ export function FollowSidebar() {
           </li>
           <li>
             <a
-              href="https://www.amazon.com/dp/B0CL5N5TNB?tag=viraltbf-20"
+              href="https://www.amazon.com/dp/B0CL5N5TNB?tag=leonidahq-20"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:underline"
@@ -84,7 +84,7 @@ export function FollowSidebar() {
           </li>
           <li>
             <a
-              href="https://www.amazon.com/dp/B003O6JKLE?tag=viraltbf-20"
+              href="https://www.amazon.com/dp/B003O6JKLE?tag=leonidahq-20"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:underline"

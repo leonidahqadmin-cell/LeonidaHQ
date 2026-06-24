@@ -32,7 +32,7 @@ export function EmailCapture({ variant = "default" }: Props) {
       <div className="text-sm">
         <p className="text-primary font-semibold">You're on the list.</p>
         <p className="text-muted-foreground mt-1">
-          Get the Leonida Map Intel Brief + instant alerts the second the first summer marketing assets drop.
+          We'll send the pre-order breakdown when it drops, plus map updates and trailer intel as it lands. No spam.
         </p>
       </div>
     );
@@ -75,7 +75,7 @@ export function EmailCapture({ variant = "default" }: Props) {
         disabled={status === "loading"}
         className="btn-primary disabled:opacity-50"
       >
-        {status === "loading" ? "..." : "Notify me"}
+        {status === "loading" ? "..." : "Get updates →"}
       </button>
     </form>
   );

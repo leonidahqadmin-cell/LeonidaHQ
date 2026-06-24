@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
+import { PreorderBanner } from "@/components/preorder-banner";
 
 const sans = Inter({
   variable: "--font-sans",
@@ -67,6 +68,7 @@ export default function RootLayout({
       className={`dark ${sans.variable} ${script.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-background overflow-x-hidden">
+        <PreorderBanner />
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />

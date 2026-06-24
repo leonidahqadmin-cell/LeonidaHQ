@@ -208,7 +208,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
           {/* Share to X */}
           <div className="mt-4">
             <a
-              href={`https://x.com/intent/tweet?text=${encodeURIComponent(article.title)} - ${encodeURIComponent(article.excerpt)} Read more: https://leonidahq.gg/articles/${article.slug} @viraltbf`}
+              href={`https://x.com/intent/tweet?text=${encodeURIComponent(`${article.title} — ${article.excerpt}`)}&url=${encodeURIComponent(`https://leonidahq.gg/articles/${article.slug}`)}&via=viraltbf`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-secondary/70 px-4 py-2 font-heading text-xs font-black uppercase tracking-widest text-secondary transition hover:bg-secondary hover:text-background"
@@ -317,7 +317,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
                 Open Map
               </Link>
               <a
-                href={`https://x.com/intent/tweet?text=${encodeURIComponent(article.title)} - ${encodeURIComponent(article.excerpt)} Read more: https://leonidahq.gg/articles/${article.slug} @viraltbf`}
+                href={`https://x.com/intent/tweet?text=${encodeURIComponent(`${article.title} — ${article.excerpt}`)}&url=${encodeURIComponent(`https://leonidahq.gg/articles/${article.slug}`)}&via=viraltbf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"

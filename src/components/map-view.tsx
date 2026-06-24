@@ -46,10 +46,10 @@ const MAP_BOUNDS = {
 };
 
 const CONFIDENCE_ORDER: Confidence[] = [
+  "Confirmed",
   "Trailer Evidence",
   "Strong Theory",
   "Weak Theory",
-  "Confirmed",
   "Unverified",
 ];
 
@@ -454,7 +454,7 @@ export function MapView() {
               Related Report
             </a>
             <a
-              href={`https://x.com/intent/tweet?text=${encodeURIComponent(`Tracking ${selectedPOI.name} on LeonidaHQ. ${selectedPOI.confidence}.`)} @viraltbf`}
+              href={`https://x.com/intent/tweet?text=${encodeURIComponent(`Tracking ${selectedPOI.name} on LeonidaHQ. ${selectedPOI.confidence}.`)}&url=${encodeURIComponent('https://leonidahq.gg/map')}&via=viraltbf`}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-primary/70 px-3 py-2 text-center text-[10px] font-black uppercase tracking-widest text-primary transition hover:bg-primary hover:text-black"

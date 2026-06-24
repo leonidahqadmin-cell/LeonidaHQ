@@ -1,11 +1,11 @@
 "use client";
 
 const HEADLINES = [
-  { label: "Official", text: "Take-Two says marketing starts this summer", href: "/articles?category=news" },
-  { label: "Watch", text: "Rockstar opened a GTA 6 Discord channel", href: "/articles?category=news" },
-  { label: "Evidence", text: "Second-city map clues are tracked on the evidence board", href: "/articles?category=evidence" },
-  { label: "Theory", text: "Trailer 3 timing remains a signal watch, not a confirmed date", href: "/articles?category=theory" },
-  { label: "Map", text: "Leonida pins now show trailer, strong, or weak confidence", href: "/map" },
+  { label: "Breaking", text: "GTA 6 pre-orders open June 25 — watch for scams, only order from Rockstar or major retailers", href: "/articles/fake-gta-6-beta-scam-warning" },
+  { label: "Confirmed", text: "GTA 6 launches November 19, 2026 on PS5 and Xbox Series X/S — why it won't slip again", href: "/articles/no-third-delay" },
+  { label: "Trailer 3", text: "Rockstar still owes us five things before launch — the pre-order scorecard", href: "/articles/trailer-3-scorecard" },
+  { label: "Map", text: "25 Leonida pins tracked with trailer confidence levels — explore now", href: "/map" },
+  { label: "Price", text: "GTA 6 may break the $70 ceiling — the case for $90 at launch", href: "/articles/the-90-dollar-question" },
 ];
 
 export function TopTicker() {

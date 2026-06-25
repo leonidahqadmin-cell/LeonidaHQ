@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
 import { ARTICLE_FAQ } from "@/lib/article-faq";
 import { getArticleImage } from "@/lib/article-images";
+import { EmailCapture } from "@/components/email-capture";
 
 type Params = Promise<{ slug: string }>;
 
@@ -268,21 +269,24 @@ export default async function ArticlePage({ params }: { params: Params }) {
               Keep the file moving
             </p>
             <h3 className="mt-2 font-heading text-xl font-black tracking-normal sm:text-2xl">
-              Send tips, source notes, or map corrections to the desk.
+              Get map updates and trailer intel before it lands anywhere else.
             </h3>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Link href="/#notify" className="btn-primary">
-                Join List
-              </Link>
+            <p className="mt-2 text-sm text-white/65">No spam. Unsubscribe any time.</p>
+            <div className="mt-5">
+              <EmailCapture />
+            </div>
+            <p className="mt-4 text-xs text-white/45">
+              Or follow{" "}
               <a
                 href="https://x.com/viraltbf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary"
+                className="text-secondary hover:underline"
               >
                 @viraltbf
-              </a>
-            </div>
+              </a>{" "}
+              for real-time drops.
+            </p>
           </div>
         </article>
 

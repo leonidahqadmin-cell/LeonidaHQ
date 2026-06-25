@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 type Props = {
@@ -34,6 +35,12 @@ export function EmailCapture({ variant = "default" }: Props) {
         <p className="text-muted-foreground mt-1">
           Check your inbox — the pre-order breakdown is on its way, plus map updates and trailer intel as it lands. No spam.
         </p>
+        <Link
+          href="/articles/gta-6-preorder-breakdown"
+          className="mt-3 inline-block font-semibold text-secondary hover:underline"
+        >
+          Read the pre-order breakdown now →
+        </Link>
       </div>
     );
   }

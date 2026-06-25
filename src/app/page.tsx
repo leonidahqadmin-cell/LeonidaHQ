@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FollowSidebar } from "@/components/follow-sidebar";
 import { ClueHotspots } from "@/components/clue-hotspots";
 import { HeroEmailCta } from "@/components/hero-email-cta";
+import { EmailCapture } from "@/components/email-capture";
 import { getAllArticles } from "@/lib/articles";
 import { getArticleImage } from "@/lib/article-images";
 
@@ -269,23 +270,36 @@ function LatestIntel({
 
 function FinalFollow() {
   return (
-    <section className="border-t border-border bg-card/30 py-12">
-      <div className="container mx-auto flex max-w-6xl flex-col gap-5 px-4 sm:px-6 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p className="font-heading text-[10px] font-bold uppercase tracking-[0.28em] text-secondary sm:text-xs">
-            Keep the signal moving
-          </p>
-          <h2 className="mt-2 font-heading text-2xl font-black leading-tight tracking-normal sm:text-4xl">
-            Every new Rockstar move should become a clean LeonidaHQ update.
-          </h2>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <Link href="/#notify" className="btn-primary">
-            Join List
-          </Link>
-          <Link href="https://x.com/viraltbf" target="_blank" className="btn-secondary">
-            @viraltbf
-          </Link>
+    <section className="border-t border-border bg-card/30 py-14 sm:py-16">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="grid gap-8 md:grid-cols-[1fr_360px] md:items-center md:gap-12">
+          <div>
+            <p className="font-heading text-[10px] font-bold uppercase tracking-[0.28em] text-secondary sm:text-xs">
+              Keep the signal moving
+            </p>
+            <h2 className="mt-2 font-heading text-2xl font-black leading-tight tracking-normal sm:text-4xl">
+              Pre-orders are live. Get the full breakdown before the noise hits.
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-white/55 sm:text-base">
+              Map updates, trailer intel, and Rockstar moves straight to your inbox. No spam. Unsubscribe any time.
+            </p>
+          </div>
+          <div>
+            <EmailCapture />
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="https://x.com/viraltbf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-tertiary btn-sm"
+              >
+                Follow @viraltbf
+              </Link>
+              <Link href="https://ko-fi.com/viraltbf" target="_blank" rel="noopener noreferrer" className="btn-tertiary btn-sm">
+                ☕ Ko-fi
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -32,7 +32,7 @@ export function EmailCapture({ variant = "default" }: Props) {
       <div className="text-sm">
         <p className="text-primary font-semibold">You're on the list.</p>
         <p className="text-muted-foreground mt-1">
-          We'll send the pre-order breakdown when it drops, plus map updates and trailer intel as it lands. No spam.
+          Check your inbox — the pre-order breakdown is on its way, plus map updates and trailer intel as it lands. No spam.
         </p>
       </div>
     );
@@ -78,7 +78,7 @@ export function EmailCapture({ variant = "default" }: Props) {
         disabled={status === "loading"}
         className="btn-primary disabled:opacity-50"
       >
-        {status === "loading" ? "..." : "Get the breakdown first →"}
+        {status === "loading" ? "..." : "Get the breakdown →"}
       </button>
       {status === "error" && (
         <p className="text-xs text-red-400 sm:col-span-2 sm:w-full">Something went wrong — please try again.</p>

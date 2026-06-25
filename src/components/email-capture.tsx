@@ -56,6 +56,9 @@ export function EmailCapture({ variant = "default" }: Props) {
         >
           {status === "loading" ? "..." : "Subscribe Free →"}
         </button>
+        {status === "error" && (
+          <p className="text-xs text-red-400">Something went wrong — please try again.</p>
+        )}
       </form>
     );
   }
@@ -75,8 +78,11 @@ export function EmailCapture({ variant = "default" }: Props) {
         disabled={status === "loading"}
         className="btn-primary disabled:opacity-50"
       >
-        {status === "loading" ? "..." : "Get updates →"}
+        {status === "loading" ? "..." : "Get the breakdown first →"}
       </button>
+      {status === "error" && (
+        <p className="text-xs text-red-400 sm:col-span-2 sm:w-full">Something went wrong — please try again.</p>
+      )}
     </form>
   );
 }

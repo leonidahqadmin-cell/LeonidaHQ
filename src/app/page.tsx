@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FollowSidebar } from "@/components/follow-sidebar";
 import { ClueHotspots } from "@/components/clue-hotspots";
-import { EmailCapture } from "@/components/email-capture";
+import { HeroEmailCta } from "@/components/hero-email-cta";
 import { getAllArticles } from "@/lib/articles";
 import { getArticleImage } from "@/lib/article-images";
 
@@ -88,12 +88,7 @@ function Hero() {
           </Link>
         </div>
 
-        <div className="mobile-safe-width mt-6 border-t border-white/15 pt-5">
-          <p className="mb-2.5 font-heading text-[10px] font-bold uppercase tracking-[0.25em] text-secondary">
-            ✉ Pre-orders open June 25 — get the breakdown first
-          </p>
-          <EmailCapture />
-        </div>
+        <HeroEmailCta />
       </div>
     </section>
   );

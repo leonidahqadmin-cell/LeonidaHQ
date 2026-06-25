@@ -35,14 +35,14 @@ function welcomeHtml() {
               </tr>
               <tr>
                 <td style="padding:8px 32px 24px;color:#cfcfd6;font-size:15px;line-height:1.6;">
-                  <p style="margin:0 0 12px;">You'll be the first to know when the Leonida map activates on launch day — <strong style="color:#FF2D78;">November 19, 2026</strong>.</p>
-                  <p style="margin:0 0 12px;">Until then, expect weekly intel drops: leaks, frame breakdowns, lore deep-dives, and the analysis you won't find on the corporate gaming sites.</p>
+                  <p style="margin:0 0 12px;">GTA 6 pre-orders went live today. We just published the full breakdown — editions, pricing analysis, what the bonuses actually are, and whether to lock in now or wait for the Holiday 2027 discount.</p>
+                  <p style="margin:0 0 12px;">After that, expect weekly intel: leaks, trailer frame breakdowns, lore deep-dives, and the analysis you won't find on the corporate gaming sites. You'll be the first to know when the Leonida map activates on launch day — <strong style="color:#FF2D78;">November 19, 2026</strong>.</p>
                   <p style="margin:0 0 0;">No spam. Just signal.</p>
                 </td>
               </tr>
               <tr>
                 <td style="padding:8px 32px 32px;text-align:center;">
-                  <a href="https://leonidahq.gg/articles" style="display:inline-block;background:#FF2D78;color:#0a0a0a;text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;font-size:12px;padding:14px 24px;border-radius:6px;">Read the latest intel →</a>
+                  <a href="https://leonidahq.gg/articles/gta-6-preorder-breakdown" style="display:inline-block;background:#FF2D78;color:#0a0a0a;text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;font-size:12px;padding:14px 24px;border-radius:6px;">Read the pre-order breakdown →</a>
                 </td>
               </tr>
               <tr>

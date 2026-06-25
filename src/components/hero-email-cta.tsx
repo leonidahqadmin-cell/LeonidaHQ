@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { EmailCapture } from "@/components/email-capture";
 
@@ -19,6 +20,17 @@ export function HeroEmailCta() {
           : "✉ Pre-orders open June 25 — get the breakdown first"}
       </p>
       <EmailCapture />
+      {live && (
+        <p className="mt-3 text-xs text-white/50">
+          Already subscribed?{" "}
+          <Link
+            href="/articles/gta-6-preorder-breakdown"
+            className="text-secondary hover:underline"
+          >
+            Read the breakdown →
+          </Link>
+        </p>
+      )}
     </div>
   );
 }

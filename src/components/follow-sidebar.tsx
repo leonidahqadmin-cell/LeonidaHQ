@@ -93,7 +93,7 @@ export function FollowSidebar() {
             </a>
           </li>
         </ul>
-        <p className="mt-3 text-[10px] text-muted-foreground/50">Affiliate links — helps keep the site free.</p>
+        <p className="mt-3 text-[10px] text-muted-foreground">Affiliate links — helps keep the site free.</p>
       </div>
     </aside>
   );

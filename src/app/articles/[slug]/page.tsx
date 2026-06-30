@@ -275,7 +275,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
             <div className="mt-5">
               <EmailCapture />
             </div>
-            <p className="mt-4 text-xs text-white/45">
+            <p className="mt-4 text-xs text-white/60">
               Or follow{" "}
               <a
                 href="https://x.com/viraltbf"

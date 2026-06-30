@@ -1,4 +1,5 @@
 // Leonida map evidence data. Pins are based on trailer analysis, logic, and community signals.
+// As of 2026-06-30: poi-1 (Vice Beach) + poi-20 (Everglades) = Confirmed; all 25 pins have lastUpdated.
 // Confidence levels indicate how solid the evidence is.
 // "Confirmed" is reserved for environments Rockstar has shown directly in official trailers —
 // the LOCATION is confirmed even when the theorized gameplay use is not.
